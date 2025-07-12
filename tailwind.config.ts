@@ -2,6 +2,13 @@ import type { Config } from 'tailwindcss';
 import plugin from 'tailwindcss/plugin';
 
 const textSizes = {
+  'display-10xl': '--text-display-10xl',
+  'display-9xl': '--text-display-9xl',
+  'display-8xl': '--text-display-8xl',
+  'display-7xl': '--text-display-7xl',
+  'display-6xl': '--text-display-6xl',
+  'display-5xl': '--text-display-5xl',
+  'display-4xl': '--text-display-4xl',
   'display-3xl': '--text-display-3xl',
   'display-2xl': '--text-display-2xl',
   'display-xl': '--text-display-xl',
@@ -47,6 +54,9 @@ export default {
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+      },
+      backgroundImage: {
+        'blue-gradient': 'linear-gradient(90deg, #002c6e 0%, #0c4eaf 100%)',
       },
       keyframes: {
         marquee: {

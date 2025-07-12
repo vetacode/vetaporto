@@ -1,72 +1,100 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import React from 'react';
 
-const ProfileSummary = () => {
+import DigitalProducts from '@/components/profile-summary/DigitalProducts';
+import Experience from '@/components/profile-summary/Experience';
+import ExpertSkill from '@/components/profile-summary/ExpertSkill';
+import PersonBlock from '@/components/profile-summary/PersonBlock';
+import WhyChoose from '@/components/profile-summary/WhyChoose';
+
+export const ProfileSummaryBase: React.FC = () => {
   return (
-    <div id='About' className='custom-container mt-13 md:mt-28'>
+    <div id='about' className='custom-container mt-13 flex flex-wrap md:mt-28'>
       <p className='md:text-lg-semibold text-md-semibold text-neutral-950'>
-        Hi, I’m Edwin Anderson 👋
+        Hi, I&apos;m Fiqrie Rahman 👋
       </p>
-      <h2 className='md:display-md-semibold text-xl-semibold mt-3 text-neutral-950 md:mt-4'>
-        Building digital products with a focus on crafting visually engaging and
-        seamless user interfaces using React.js.{' '}
+      <h2 className='md:display-md-semibold text-xl-semibold mt-3 text-justify text-neutral-950 md:mt-4'>
+        Front-End Web Developer with a strong foundation in UI/UX and a
+        decade-long background in technical and commercial leadership.{' '}
         <span className='text-neutral-400'>
-          Prioritizing responsive design, performance optimization, and
-          user-centric features to deliver exceptional web experiences.
+          Specialized in building user-centered web applications using React,
+          TypeScript, and Tailwind CSS, with a deep understanding of design
+          principles and precision execution.
         </span>
       </h2>
-      <SummaryCards>
-        <SummaryCard
-          title='Why Choose Me'
-          description='Delivering excellence with innovative solutions and seamless execution.'
-          stats='5.0'
-        ></SummaryCard>
-      </SummaryCards>
-    </div>
-  );
-};
+      <motion.div className='mx-auto mt-6 flex flex-wrap gap-5 overflow-hidden md:mt-12'>
+        <motion.div
+          className='min-w-[300px] flex-1 basis-[30%]'
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: 'spring', stiffness: 150, damping: 70, delay: 0 }}
+        >
+          <WhyChoose className='h-full w-full' />
+        </motion.div>
 
-export default ProfileSummary;
+        <motion.div
+          className='min-w-[300px] flex-1 basis-[30%]'
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{
+            type: 'spring',
+            stiffness: 150,
+            damping: 70,
+            delay: 0.1,
+          }}
+        >
+          <ExpertSkill className='h-full w-full' />
+        </motion.div>
 
-type SummaryCardsProps = {
-  children: React.ReactNode;
-};
+        <motion.div
+          className='min-w-[300px] flex-1 basis-[30%]'
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{
+            type: 'spring',
+            stiffness: 150,
+            damping: 70,
+            delay: 0.2,
+          }}
+        >
+          <Experience className='h-full w-full px-6.5 py-7.25 md:px-9 md:py-7' />
+        </motion.div>
 
-const SummaryCards: React.FC<SummaryCardsProps> = ({ children }) => {
-  return <div className=''>{children}</div>;
-};
+        <motion.div
+          className='min-h-[374px] min-w-[300px] flex-1 basis-[30%]'
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{
+            type: 'spring',
+            stiffness: 150,
+            damping: 70,
+            delay: 0.3,
+          }}
+        >
+          <PersonBlock className='h-full w-full p-7.75' />
+        </motion.div>
 
-type SummaryCardProps = {
-  title: string;
-  description: string;
-  icon?: React.ReactNode;
-  backgroundColor?: string;
-  stats?: string;
-  children?: React.ReactNode;
-};
-
-const SummaryCard: React.FC<SummaryCardProps> = ({
-  title,
-  description,
-  icon,
-  backgroundColor,
-  stats,
-  children,
-}) => {
-  return (
-    <div className='bg-secondary-300 my-2 mt-6 h-95 w-99 rounded-xl p-6 md:mt-12 md:rounded-2xl'>
-      <h3 className='display-md-bold text-base-white'>{title}</h3>
-      {icon && <div className='flex-between my-2 h-auto w-full'>{icon}</div>}
-      <p className='t ext-md-regular text-base-white my-1.5 mt-2 md:mt-4'>
-        {description}
-      </p>
-      {stats && (
-        <p className='text-neutral-25 text-sm-medium my-1.5 mt-6 md:mt-13'>
-          {stats}
-        </p>
-      )}
-      {backgroundColor && (
-        <div className='rounded-2xl bg-[#282828]/20 p-5'>{children}</div>
-      )}
+        <motion.div
+          className='min-w-[300px] flex-2 basis-[62%]'
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{
+            type: 'spring',
+            stiffness: 150,
+            damping: 70,
+            delay: 0.4,
+          }}
+        >
+          <DigitalProducts className='px-4.5 pt-8 pb-9 md:px-6 md:pt-6 md:pb-8' />
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

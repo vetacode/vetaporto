@@ -1,37 +1,37 @@
-// import Image from 'next/image';
 import Image from 'next/image';
 import React from 'react';
 
 import { Marquee } from '@/components/ui/marquee';
 
 import { blackBandData } from '@/constants/black-band-data';
+import { generateClamp } from '@/functions/generate-clamp';
 
 export const BlackBandMarquee = () => {
   return (
-    <div className='flex-center relative z-30 -mt-4 h-21 rotate-[358.11deg] bg-neutral-950 md:-mt-7 md:h-35'>
+    <div className='relative z-30 mx-[-0.5vw] -mt-6 -rotate-[1.89deg] bg-neutral-950 md:-mt-9'>
       <div
-        className='w-full overflow-hidden'
+        className='flex-center w-full overflow-hidden'
         style={{
-          width: 'clamp(66.88rem, 158.44vw, 122rem)',
-          // height: 'clamp(5.25rem, 11.36vw, 8.75rem)',
+          height: generateClamp(84, 140, 1440),
         }}
       >
-        <Marquee className='py-4'>
+        <Marquee className=''>
           {blackBandData.map((item, index) => (
             <div
               key={index}
-              className='display-xs-bold md:display-2xl-bold text-neutral-25 -mx-3 flex h-full w-auto items-center object-contain select-none'
+              className='text-neutral-25 display-xs-bold -mx-5 flex h-full w-auto items-center object-contain select-none md:-mx-3'
+              style={{
+                fontSize: generateClamp(24, 48, 1440),
+              }}
             >
               {item.text && <span>{item.text}</span>}
               {item.icon && (
                 <Image
                   src={item.icon}
                   alt='icon'
-                  width={48}
-                  height={52.5}
-                  className=''
+                  className='mx-9'
                   style={{
-                    width: 'clamp(2rem, 3.9vw, 3rem)',
+                    height: generateClamp(35, 52.5, 1440),
                   }}
                 />
               )}

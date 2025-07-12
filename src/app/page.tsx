@@ -1,17 +1,31 @@
 import { BlackBandMarquee } from './home/partials/black-band';
+import WhyChooseMe from './home/partials/choose-me';
+import { ContactForm } from './home/partials/contact-form';
+import Faq from './home/partials/faq';
+import Footer from './home/partials/footer';
 import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
-import ProfileSummary from './home/partials/profile-summary';
+import { ProfessionalSkills } from './home/partials/profesional-skills';
+import { ProfileSummaryBase } from './home/partials/profile-summary';
+import Projects from './home/partials/projects';
+import SuccessStories from './home/partials/success-stories';
+import WorkExperience from './home/partials/work-experience';
 
 const Home = () => {
   return (
-    <div className='h-[200vh]'>
+    <div className='relative mx-auto overflow-hidden'>
       <Navbar />
       <Hero />
       <BlackBandMarquee />
-      <ProfileSummary />
-
-      {/* <div className='bg-primary-100 mx-auto mt-50 box-border h-100 w-100 border' /> */}
+      <ProfileSummaryBase />
+      <ProfessionalSkills />
+      <WhyChooseMe />
+      <Projects />
+      <WorkExperience />
+      <SuccessStories />
+      <Faq />
+      <ContactForm />
+      <Footer />
     </div>
   );
 };

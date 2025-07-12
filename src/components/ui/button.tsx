@@ -10,15 +10,22 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-neutral-25 rounded-full text-sm-medium text-neutral-950 hover:shadow-[0_0_17px_rgba(255,255,255,0.9)]  hover:bg-neutral-25 active:bg-primary-100 transition-all duration-400 ease cursor-pointer',
+          'bg-neutral-25 rounded-full text-sm-medium font-medium text-neutral-950 hover:shadow-[0_0_17px_rgba(255,255,255,0.9)] hover:bg-neutral-25 active:bg-primary-100 transition-all duration-300 ease cursor-pointer',
 
         secondary:
-          'bg-primary-300 rounded-full text-neutral-25 text-sm-medium md:text-md-medium hover:shadow-[0_0_17px_rgba(102,0,235,0.6)] transition-all duration-400 ease cursor-pointer',
+          'bg-primary-300 rounded-full text-neutral-25 text-sm-medium font-medium md:text-md-medium hover:shadow-[0_0_17px_rgba(102,0,235,0.6)] transition-all duration-300 ease cursor-pointer',
 
-        link: 'text-md-medium text-primary-300 hover:underline hover:text-primary-200 active:text-primary-100 transition-colors duration-300  cursor-pointer',
+        link: 'text-md-medium text-primary-300 hover:underline hover:text-primary-200 active:text-primary-100 transition-colors duration-300 cursor-pointer',
+
+        pagiActive:
+          'bg-primary-200 h-3 w-8 cursor-pointer rounded-full transition-colors duration-300 hover:bg-neutral-300',
+
+        pagiInactive:
+          'hover:bg-primary-200 h-3 w-4 cursor-pointer rounded-full bg-neutral-300 transition-colors duration-300',
       },
       size: {
         default: 'h-12 px-11.5',
+        pagination: 'h-3 w-auto',
       },
     },
     defaultVariants: {

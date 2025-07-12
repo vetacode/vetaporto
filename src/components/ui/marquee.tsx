@@ -16,14 +16,14 @@ export const Marquee: React.FC<MarqueeProps> = ({
   reverse = false,
   pauseOnHover = true,
   vertical = false,
-  repeat = 4, //repeat 4 times coz item nya 1 klo di set default 1 ga cukup
+  repeat = 4, //repeat 4 times coz item nya sdkit, klo di set default (1) aja ga cukup
   children,
   ...props
 }) => {
   return (
     <div
       className={cn(
-        'group flex [gap:var(--gap)] overflow-hidden p-2 [--duration:30s] [--gap:3rem]',
+        'group flex [gap:var(--gap)] overflow-hidden [--duration:30s] [--gap:0.5rem]',
 
         className
       )}
@@ -47,7 +47,3 @@ export const Marquee: React.FC<MarqueeProps> = ({
     </div>
   );
 };
-
-// 'group flex [gap:var(--gap)] overflow-hidden p-2 [--duration:40s] [--gap:3rem]',
-
-// 'group [--gap: 3rem] [--duration: 40s] flex [gap:var(--gap)] overflow-hidden p-2',

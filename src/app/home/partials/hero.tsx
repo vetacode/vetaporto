@@ -1,140 +1,210 @@
+'use client';
+
+import { Icon } from '@iconify/react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
+import React, { useRef } from 'react';
 
 import FeatureCard from '@/components/ui/feature-cards';
+import { StackedCircles } from '@/components/ui/stacked-circles';
+
+import { generateClamp } from '@/functions/generate-clamp';
+import { generateClampInverse } from '@/functions/generate-clamp-inverse';
 
 const Hero = () => {
+  const ref = useRef(null);
+  const animationPropsLeft = {
+    initial: { x: -150, opacity: 0 },
+    whileInView: { x: 0, opacity: 1 },
+    viewport: { once: true, amount: 0.1 },
+    transition: {
+      type: 'spring',
+      stiffness: 150,
+      damping: 70,
+    },
+  };
+  const animationPropsRight = {
+    initial: { x: 150, opacity: 0 },
+    whileInView: { x: 0, opacity: 1 },
+    viewport: { once: true, amount: 0.1 },
+    transition: {
+      type: 'spring',
+      stiffness: 150,
+      damping: 70,
+    },
+  };
+  const animationPropsBottomRight = {
+    initial: { x: 100, y: 100, opacity: 0 },
+    whileInView: { x: 0, y: 0, opacity: 1 },
+    viewport: { once: true, amount: 0.1 },
+    transition: {
+      type: 'spring',
+      stiffness: 150,
+      damping: 70,
+    },
+  };
+  const animationPropsTop = {
+    initial: { y: -150, opacity: 0 },
+    whileInView: { y: 0, opacity: 1 },
+    viewport: { once: true, amount: 0.1 },
+    transition: {
+      type: 'spring',
+      stiffness: 150,
+      damping: 70,
+    },
+  };
   return (
-    <section
-      className='bg-primary-400 relative overflow-hidden pt-25 md:pt-35'
-      style={
-        {
-          // height: 'clamp(12.19rem, 19.73vw, 15.19rem)',
-          // height: 'clamp(43.81rem, 71.91vw, 55.38rem)',
-          // paddingTop: 'clamp(6.25rem, 11.69vw, 6.75rem)',
-        }
-      }
-    >
-      <div className='relative z-20'>
-        <h1
-          className='text-neutral-25 flex-center font-extrabold'
+    <>
+      <section
+        id='Home'
+        className='bg-primary-400 relative flex w-full flex-wrap justify-center'
+      >
+        <div
+          className='relative w-[768px] overflow-hidden md:w-[1440px]'
+          id='Hero'
           style={{
-            fontSize: 'clamp(2.5rem, 10.17vw, 9.38rem)',
-            lineHeight: 'clamp(2.13rem, 15.82vw, 12.19rem)',
+            height: generateClamp(701, 886, 1440),
           }}
+          ref={ref}
         >
-          EDWIN ANDERSON
-        </h1>
-      </div>
-
-      <div
-        className='custom-container z-10 mt-125 pb-20'
-        style={{
-          width: 'clamp(18rem, 90vw, 77rem)',
-        }}
-      >
-        <div className='flex-center relative'>
-          <div
-            className='absolute rotate-0 rounded-full bg-[#6600EB]/20'
-            style={{
-              width: 'clamp(50rem, 80vw, 72rem)',
-              height: 'clamp(50rem, 80vw, 72rem)',
+          <motion.h1
+            initial={animationPropsTop.initial}
+            whileInView={animationPropsTop.whileInView}
+            viewport={animationPropsTop.viewport}
+            transition={{
+              ...animationPropsTop.transition,
+              delay: 0.3,
             }}
+            className='text-neutral-25 absolute left-1/2 z-20 w-full -translate-x-1/2 text-center font-extrabold'
+            style={{
+              fontSize: 'clamp(2.5rem, 10.17vw, 9.38rem)',
+              lineHeight: 'clamp(2.13rem, 15.82vw, 12.19rem)',
+              top: generateClamp(100, 144, 1440),
+            }}
+          >
+            FIQRIE RAHMAN
+          </motion.h1>
+
+          <StackedCircles
+            className='absolute left-1/2 z-0 -translate-x-1/2'
+            style={{ top: generateClamp(576, 751, 1440) }}
           />
 
           <div
-            className='absolute rotate-[10deg] rounded-full bg-[#6600EB]/40'
+            className='absolute left-1/2 z-20 aspect-square -translate-x-1/2'
             style={{
-              width: 'clamp(40rem, 65vw, 58rem)',
-              height: 'clamp(40rem, 65vw, 58rem)',
+              height: generateClamp(424, 763, 1440),
+              bottom: generateClampInverse(-75, 0, 1440),
             }}
-          />
-
-          <div
-            className='absolute rotate-[20deg] rounded-full bg-[#6600EB]/60'
-            style={{
-              width: 'clamp(30rem, 50vw, 43rem)',
-              height: 'clamp(30rem, 50vw, 43rem)',
+          >
+            <Image
+              src='/images/fiqrie-retouch.png'
+              alt='hero-image'
+              fill
+              className='z-50 translate-y-[9%] scale-105 object-contain'
+              priority
+            />
+          </div>
+          <motion.div
+            initial={animationPropsBottomRight.initial}
+            whileInView={animationPropsBottomRight.whileInView}
+            viewport={animationPropsBottomRight.viewport}
+            transition={{
+              ...animationPropsBottomRight.transition,
+              delay: 0.1,
             }}
-          />
-
-          <div
-            className='absolute rotate-[30deg] rounded-full bg-[#6600EB]/80'
-            style={{
-              width: 'clamp(20rem, 35vw, 30rem)',
-              height: 'clamp(20rem, 35vw, 30rem)',
+          >
+            <FeatureCard
+              title='5.0'
+              icon={
+                <Image
+                  src='/icons/5stars.svg'
+                  alt='star'
+                  width={200}
+                  height={192}
+                  className='object-contain'
+                />
+              }
+              description='Many Client Trust with me'
+              className='t translate-y-[5%] rotate-[6.73deg] md:translate-x-[4%] md:translate-y-[0%] md:rotate-[3.15deg]'
+              style={{
+                left: generateClamp(73, 313, 1440),
+                top: generateClamp(185, 398, 1440),
+                width: generateClamp(144, 200, 1440),
+                height: generateClamp(136, 192, 1440),
+                fontSize: generateClamp(24, 40, 1440),
+                lineHeight: generateClamp(36, 48, 1440),
+              }}
+            />
+          </motion.div>
+          <motion.div
+            initial={animationPropsRight.initial}
+            whileInView={animationPropsRight.whileInView}
+            viewport={animationPropsRight.viewport}
+            transition={{
+              ...animationPropsRight.transition,
+              delay: 0.5,
             }}
-          />
+          >
+            <FeatureCard
+              title='Frontend Developer'
+              description={
+                <span className='text-sm-medium flex items-center'>
+                  <Icon
+                    icon='bitcoin-icons:verify-filled'
+                    className='text-base-white mr-0.5 h-6 w-auto md:mr-1'
+                  />
+                  React Expert
+                </span>
+              }
+              className='translate-x-[-34%] translate-y-[20%] -rotate-[10.9deg] whitespace-nowrap md:translate-x-[0%] md:translate-y-[0%] md:-rotate-[3.24deg]'
+              style={{
+                left: generateClamp(0, 226, 1440),
+                top: generateClamp(484, 658, 1440),
+                width: generateClamp(166, 283, 1440),
+                height: generateClamp(80, 104, 1440),
+                fontSize: generateClamp(14, 24, 1440),
+                lineHeight: generateClamp(24, 30, 1440),
+              }}
+            />
+          </motion.div>
+          <motion.div
+            initial={animationPropsLeft.initial}
+            whileInView={animationPropsLeft.whileInView}
+            viewport={animationPropsLeft.viewport}
+            transition={{
+              ...animationPropsLeft.transition,
+              delay: 0.3,
+            }}
+          >
+            <FeatureCard
+              title='50+'
+              description='Global Clients'
+              className='md:display-xl-bold display-xs-bold translate-y-[5%] rotate-[5.31deg] md:translate-y-[0%]'
+              style={{
+                left: generateClamp(285, 950, 1440),
+                top: generateClamp(443, 573, 1440),
+                width: generateClamp(148, 208, 1440),
+                height: generateClamp(136, 192, 1440),
+                fontSize: generateClamp(24, 40, 1440),
+                lineHeight: generateClamp(36, 56, 1440),
+              }}
+              imageSrc='/images/global-clients.png'
+              width={168}
+              height={52}
+            />
+          </motion.div>
         </div>
-      </div>
-
+      </section>
       <div
-        className='absolute bottom-0 left-1/2 z-30 -translate-x-1/2 transform md:-bottom-23'
-        style={{
-          width: 'clamp(26.5rem, 61.95vw, 47.69rem)',
-        }}
-      >
-        <Image
-          src='/images/cheerful-asian-mobile.png'
-          alt='hero-image'
-          // fill
-          width={763}
-          height={763}
-          className='object-contain'
-        />
-      </div>
-
-      <FeatureCard
-        title='5.0'
-        icon={
-          <Image
-            src='/icons/5stars.svg'
-            alt='star'
-            width={200}
-            height={192}
-            className='object-contain'
-          />
-        }
-        description='Many Client Trust with me'
-        className='display-xl-bold absolute top-[43%] right-1/2 -translate-x-[100%] rotate-[6.73deg] md:rotate-[3.15deg]'
-        style={{
-          left: 'clamp(10%, 60vw, 38%)',
-          top: 'clamp(10%, 45vw, 43%)',
-          width: 'clamp(9rem, 60vw, 12.5rem)',
-          // borderRadius: 'clamp(0.19rem, 0.32vw, 0.25rem)',
-        }}
+        className='bg-primary-400 !pointer-events-none absolute left-1/2 z-[-1] ml-[-1vw] h-[150px] w-full -translate-x-1/2 -rotate-[1.89deg]'
+        style={{ top: generateClamp(550, 750, 1440) }}
       />
-      <FeatureCard
-        title='Frontend Developer'
-        description='React Expert'
-        className='display-xs-bold absolute top-[74.3%] right-1/2 -translate-x-[70%] -rotate-[3.24deg]'
-        style={{
-          width: 'clamp(10.38rem, 22.97vw, 18.69rem)',
-          // borderRadius: 'clamp(0.19rem, 0.32vw, 0.25rem)',
-        }}
+      <div
+        className='bg-base-white !pointer-events-none absolute left-1/2 z-[1] h-[100px] w-full -translate-x-1/2 -rotate-[1.89deg]'
+        style={{ top: generateClamp(700, 915, 1440) }}
       />
-      <FeatureCard
-        title='50+'
-        description='Global Clients'
-        className='display-xl-bold absolute top-[66%] left-1/2 translate-x-[130%] rotate-[5.31deg]'
-        style={{
-          width: 'clamp(9rem, 16.23vw, 12.5rem)',
-          // borderRadius: 'clamp(0.19rem, 0.32vw, 0.25rem)',
-        }}
-        icon={
-          <Image
-            src='/icons/global-clients.svg'
-            alt='clients'
-            width={168}
-            height={52}
-            className='object-contain'
-            // style={{
-            //   width: 'clamp(2rem, 3.9vw, 3rem)',
-            // }}
-          />
-        }
-      />
-    </section>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet } from '@/components/ui/sheet';
@@ -17,8 +17,47 @@ import {
 
 import { navigationData } from '@/constants/navigation-data';
 
+const navVariants = {
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: 'easeOut',
+    },
+  },
+  hidden: {
+    y: '-100%',
+    transition: {
+      duration: 0.4,
+      ease: 'easeIn',
+    },
+  },
+};
 const Navbar = () => {
   const { scrollY } = useScroll();
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', controlNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, [lastScrollY]);
+
   const background = useTransform(
     scrollY,
     [0, 100],
@@ -31,24 +70,33 @@ const Navbar = () => {
   );
   return (
     <motion.header
-      style={{ background, backdropFilter: backdropBlur }}
-      className='fixed top-0 z-50 w-full'
+      variants={navVariants}
+      initial='hidden'
+      animate={visible ? 'visible' : 'hidden'}
+      style={{
+        background,
+        backdropFilter: backdropBlur,
+      }}
+      className='fixed top-0 left-1/2 z-50 w-full -translate-x-1/2'
     >
       <div className='flex-between custom-container md:h-21.3 h-20'>
-        <Image
-          src='/company-logos/company-logo.svg'
-          alt='logo'
-          width={141}
-          height={32}
-          className='cursor-pointer transition-all duration-400 hover:h-10 hover:w-38'
-        />
+        <Link href='#home'>
+          <Image
+            // src='/company-logos/company-logo.svg'
+            src='/company-logos/PixelPerfectBox2.png'
+            alt='logo'
+            width={141}
+            height={32}
+            className='cursor-pointer transition-all duration-300 hover:scale-105'
+          />
+        </Link>
         <nav className='hidden lg:block'>
           <ul className='flex-start gap-8.5'>
             {navigationData.map((data) => (
-              <li key={data.label}>
+              <li key={data.href}>
                 <Link
                   href={data.href}
-                  className='hover:text-md-extrabold p-2 transition-all duration-400'
+                  className='hover:text-md-extrabold p-2 transition-all duration-300'
                 >
                   {data.label}
                 </Link>
@@ -58,7 +106,7 @@ const Navbar = () => {
         </nav>
         <Button
           asChild
-          className='!hidden transition-all duration-400 lg:!flex'
+          className='!hidden transition-all duration-300 lg:!flex'
         >
           <Link href='#contact'>
             <Image
@@ -78,18 +126,21 @@ const Navbar = () => {
               icon='ci:menu-alt-01'
               width={24}
               height={24}
-              className='cursor-pointer transition-all duration-400 hover:[height:28px] hover:[width:28px] lg:hidden'
+              className='cursor-pointer transition-all duration-300 hover:scale-115 lg:hidden'
             />
           </SheetTrigger>
           <SheetContent>
-            <SheetTitle className='text-color-neutral-25 py-6'>
-              <Image
-                src='/company-logos/company-logo-black.svg'
-                alt='logo-black'
-                width={141}
-                height={32}
-                className='ml-4 cursor-pointer transition-all duration-400'
-              />
+            <SheetTitle asChild className='text-color-neutral-25 py-6'>
+              <Link href='#home'>
+                <Image
+                  // src='/company-logos/company-logo-black.svg'
+                  src='/company-logos/PixelPerfectBox.png'
+                  alt='logo-black'
+                  width={141}
+                  height={32}
+                  className='ml-4 cursor-pointer transition-all duration-300 hover:scale-105'
+                />
+              </Link>
             </SheetTitle>
             <nav className='mt-4'>
               <ul className='flex flex-col gap-4 pl-2'>
@@ -110,7 +161,7 @@ const Navbar = () => {
             <Button
               asChild
               variant='secondary'
-              className='hover:text-md-regular transition-all duration-400'
+              className='transition-all duration-300 hover:scale-102'
             >
               <SheetClose asChild>
                 <Link href='#contact'>
