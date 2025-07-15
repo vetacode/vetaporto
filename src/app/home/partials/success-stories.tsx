@@ -196,7 +196,7 @@ const SuccessStoriesCard: React.FC<SuccessStoriesCardProps> = ({
 }) => {
   return (
     <div className='bg-base-white flex flex-col items-center rounded-xl p-4 shadow-[0_5px_12px_rgba(0,0,0,0.1)] transition-all duration-300 hover:scale-95 hover:cursor-pointer md:rounded-2xl md:p-6'>
-      <Image src={logo} alt='logo' className='h-10 w-auto md:h-12' />
+      <Image src={logo} alt='logo' className='h-18 w-auto md:h-20' />
       <p className='text-sm-medium md:text-md-medium line-clamp-5 max-h-28 pt-3 pb-5 text-center text-neutral-950 md:pt-4 md:pb-8'>
         {description}
       </p>
