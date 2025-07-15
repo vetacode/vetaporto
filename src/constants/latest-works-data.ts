@@ -3,7 +3,7 @@ import { StaticImageData } from 'next/image';
 import project2 from '../../public/images/latest-works/CompanyPortfolio.svg';
 import project6 from '../../public/images/latest-works/ecommerce.svg';
 import project5 from '../../public/images/latest-works/MovieExplorer.svg';
-import project4 from '../../public/images/latest-works/PricingPlanCards.svg';
+import project4 from '../../public/images/latest-works/Pokedex.svg';
 import project1 from '../../public/images/latest-works/PrivatePortfolio.svg';
 import project3 from '../../public/images/latest-works/TodoList.svg';
 
@@ -42,10 +42,10 @@ export const LatestWorksData: LatestWorksDataProps[] = [
     icon: '/icons/arrow-right.svg',
   },
   {
-    dashboard: 'Pricing Plan Cards',
-    year: '2024',
+    dashboard: 'PokeDex',
+    year: '2025',
     image: project4,
-    title: 'Payment Options Cards Design',
+    title: 'Pokemon Application',
     visit: 'Visit Website',
     icon: '/icons/arrow-right.svg',
   },
