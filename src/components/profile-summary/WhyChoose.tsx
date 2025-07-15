@@ -29,8 +29,8 @@ const WhyChoose: React.FC<WhyChooseProps> = ({ className }) => {
   const row1 = [
     <Chip key='react' text='React Expert' color='bg-white' className='mx-1' />,
     <Chip
-      key='fullstack'
-      text='Fullstack Developer'
+      key='frontend'
+      text='Frontend Developer'
       color='bg-white'
       className='mx-1'
     />,
@@ -42,7 +42,7 @@ const WhyChoose: React.FC<WhyChooseProps> = ({ className }) => {
     />,
     <Chip
       key='experience'
-      text='5 Years Experience'
+      text='10+ Months Experience'
       color='bg-white'
       className='mx-1'
     />,

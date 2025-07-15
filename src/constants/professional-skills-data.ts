@@ -42,10 +42,10 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     percentage: '90',
   },
   {
-    icon: '/icons/expert-skill/framer-motion.svg',
-    title: 'Framer Motion',
+    icon: '/icons/expert-skill/nextjs.svg',
+    title: 'Next.js',
     description:
-      'Creating smooth and engaging animations for a better user experience.',
+      'Building server-side rendered and statically generated React applications with optimized performance.',
     percentage: '95',
   },
 
@@ -89,7 +89,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     icon: '/icons/expert-skill/framer-motion.svg',
     title: 'Framer Motion',
     description:
-      'Creating smooth and engaging animations for a better user experience.',
+      'Building server-side rendered and statically generated React applications with optimized performance.',
     percentage: '95',
   },
   {
@@ -122,10 +122,10 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     percentage: '95',
   },
   {
-    icon: '/icons/expert-skill/framer-motion.svg',
-    title: 'Framer Motion',
+    icon: '/icons/expert-skill/nextjs.svg',
+    title: 'Next.js',
     description:
-      'Creating smooth and engaging animations for a better user experience.',
+      'Building server-side rendered and statically generated React applications with optimized performance.',
     percentage: '95',
   },
   {
