@@ -1,11 +1,11 @@
 import { StaticImageData } from 'next/image';
 
-import project1 from '../../public/images/latest-works/project1.jpg';
-import project2 from '../../public/images/latest-works/project2.jpg';
-import project3 from '../../public/images/latest-works/project3.jpg';
-import project4 from '../../public/images/latest-works/project4.jpg';
-import project5 from '../../public/images/latest-works/project5.jpg';
-import project6 from '../../public/images/latest-works/project6.jpg';
+import project2 from '../../public/images/latest-works/CompanyPortfolio.svg';
+import project6 from '../../public/images/latest-works/ecommerce.svg';
+import project5 from '../../public/images/latest-works/MovieExplorer.svg';
+import project4 from '../../public/images/latest-works/PricingPlanCards.svg';
+import project1 from '../../public/images/latest-works/PrivatePortfolio.svg';
+import project3 from '../../public/images/latest-works/TodoList.svg';
 
 type LatestWorksDataProps = {
   dashboard: string;
@@ -34,15 +34,15 @@ export const LatestWorksData: LatestWorksDataProps[] = [
     icon: '/icons/arrow-right.svg',
   },
   {
-    dashboard: 'Blog',
+    dashboard: 'Todo List',
     year: '2025',
     image: project3,
-    title: 'Simple Web Blog',
+    title: 'Simple Todo List Application',
     visit: 'Visit Website',
     icon: '/icons/arrow-right.svg',
   },
   {
-    dashboard: 'Call to Action Cards',
+    dashboard: 'Pricing Plan Cards',
     year: '2024',
     image: project4,
     title: 'Payment Options Cards Design',

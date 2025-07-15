@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='flex flex-col gap-5 md:flex-row md:items-center md:gap-4'>
           <Link href='#home'>
             <Image
-              src='/company-logos/PixelPerfectBox2.png'
+              src='/company-logos/PerfectPixelCapsule.svg'
               alt='logo'
               width={141}
               height={32}

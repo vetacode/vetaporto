@@ -1,14 +1,8 @@
 import type { StaticImageData } from 'next/image';
 
-import adobe from '../../public/company-logos/adobe.svg';
-import google from '../../public/company-logos/google.svg';
-import netflix from '../../public/company-logos/netflix.svg';
-import postman from '../../public/company-logos/postman.svg';
-import spotify from '../../public/company-logos/spotify.svg';
-import trustPilot from '../../public/company-logos/trust-pilot.svg';
-import upwork from '../../public/company-logos/upwork.svg';
-import zapier from '../../public/company-logos/zapier.svg';
-import zoom from '../../public/company-logos/zoom.svg';
+import lina from '../../public/images/lina-circle.png';
+import priskilla from '../../public/images/priskilla-circle.png';
+import tassya from '../../public/images/tassya-circle.png';
 
 type SuccessStoriesDataProps = {
   logo: StaticImageData;
@@ -20,76 +14,75 @@ type SuccessStoriesDataProps = {
 
 export const SuccessStoriesData: SuccessStoriesDataProps[] = [
   {
-    logo: upwork,
+    logo: lina,
     description:
-      'Thanks to their expertise, our website is now faster, more responsive, and visually stunning. We’ve seen a significant increase in user engagement!',
+      'I strongly recommended my colleague-Fiqrie as a good manager. He is consistently pleasant, and takes on all assignments with enthusiasm and dedication. I have had the pleasure of working with him for almost 2 years (for the project of poultry on farm) and he was highly committed with a great responsibility.',
     rating: 5,
-    personName: 'Robert Lewandowski',
-    personPosition: 'Head of Engineering, Upwork',
+    personName: 'Lina Maryana',
+    personPosition: 'Marketing Manager, DSM Firmenich',
   },
   {
-    logo: zapier,
+    logo: priskilla,
     description:
-      'Working with this developer was seamless. They understood our automation needs perfectly and delivered a solution that exceeded expectations.',
+      'It`s been a great pleasure working with Fiqrie for the past 2 years. Fiqrie is an energetic and a very analytic person which always brings new ideas to the table. We have worked together on some projects and I found him a very dedicated professional. He always sets strategic directions and accomplishes every project very well.',
     rating: 4,
-    personName: 'Dani Olmo',
-    personPosition: 'Product Manager, Zapier',
+    personName: 'Priskilla Sophia',
+    personPosition: 'Technical Specialist, Novus International',
   },
   {
-    logo: zoom,
+    logo: tassya,
     description:
-      'Our video conferencing platform required complex UI work that they handled with exceptional skill. The result is intuitive and highly performant.',
+      'Fiqrie is a hard working and committed person. He is very detailed and determined to reach his goals. Fiqrie will always provide the best contribution to the organisation. He works well with his fellow team and shows good cooperation with the office and support team.',
     rating: 5,
-    personName: 'Jude Bellingham',
-    personPosition: 'Vice President, Zoom',
+    personName: 'Natassya Paramita',
+    personPosition: 'Office Manager, Alltech Inc.',
   },
   {
-    logo: google,
+    logo: tassya,
     description:
-      'Their frontend expertise transformed our application performance. The UI is now incredibly responsive and our user retention has improved by 40%.',
+      'Fiqrie is a hard working and committed person. He is very detailed and determined to reach his goals. Fiqrie will always provide the best contribution to the organisation. He works well with his fellow team and shows good cooperation with the office and support team.',
     rating: 5,
-    personName: 'Robert Lewandowski',
-    personPosition: 'Head of Engineering, Google',
+    personName: 'Natassya Paramita',
+    personPosition: 'Office Manager, Alltech Inc.',
   },
   {
-    logo: netflix,
+    logo: lina,
     description:
-      'The streaming interface they built for us is both beautiful and lightning-fast. Our users love the improved experience and engagement metrics are up.',
+      'I strongly recommended my colleague-Fiqrie as a good manager. He is consistently pleasant, and takes on all assignments with enthusiasm and dedication. I have had the pleasure of working with him for almost 2 years (for the project of poultry on farm) and he was highly committed with a great responsibility.',
+    rating: 5,
+    personName: 'Lina Maryana',
+    personPosition: 'Marketing Manager, DSM Firmenich',
+  },
+  {
+    logo: priskilla,
+    description:
+      'It`s been a great pleasure working with Fiqrie for the past 2 years. Fiqrie is an energetic and a very analytic person which always brings new ideas to the table. We have worked together on some projects and I found him a very dedicated professional. He always sets strategic directions and accomplishes every project very well.',
     rating: 4,
-    personName: 'Emma Rodriguez',
-    personPosition: 'Product Director, Netflix',
-  },
-
-  {
-    logo: adobe,
-    description:
-      'The interactive design tools they implemented have revolutionized our creative platform. Technical excellence combined with design sensibility.',
-    rating: 5,
-    personName: 'Sarah Chen',
-    personPosition: 'UX Director, Adobe',
+    personName: 'Priskilla Sophia',
+    personPosition: 'Technical Specialist, Novus International',
   },
   {
-    logo: spotify,
+    logo: priskilla,
     description:
-      'Their work on our music recommendation interface was outstanding. They delivered a responsive, accessible experience our users absolutely love.',
+      'It`s been a great pleasure working with Fiqrie for the past 2 years. Fiqrie is an energetic and a very analytic person which always brings new ideas to the table. We have worked together on some projects and I found him a very dedicated professional. He always sets strategic directions and accomplishes every project very well.',
     rating: 4,
-    personName: 'Marcus Johnson',
-    personPosition: 'Technical Lead, Spotify',
+    personName: 'Priskilla Sophia',
+    personPosition: 'Technical Specialist, Novus International',
   },
   {
-    logo: postman,
+    logo: tassya,
     description:
-      'The work they did on our API client was fantastic. The UI is now incredibly responsive and our user retention has improved by 35%.',
+      'Fiqrie is a hard working and committed person. He is very detailed and determined to reach his goals. Fiqrie will always provide the best contribution to the organisation. He works well with his fellow team and shows good cooperation with the office and support team.',
     rating: 5,
-    personName: 'Ankit Sobti',
-    personPosition: 'Co-founder, Postman',
+    personName: 'Natassya Paramita',
+    personPosition: 'Office Manager, Alltech Inc.',
   },
   {
-    logo: trustPilot,
+    logo: lina,
     description:
-      'The team implemented a new review system that is both beautiful and highly performant. Our user engagement has increased by 30%.',
-    rating: 4,
-    personName: 'Peter Holten M hlmann',
-    personPosition: 'CEO, Trustpilot',
+      'I strongly recommended my colleague-Fiqrie as a good manager. He is consistently pleasant, and takes on all assignments with enthusiasm and dedication. I have had the pleasure of working with him for almost 2 years (for the project of poultry on farm) and he was highly committed with a great responsibility.',
+    rating: 5,
+    personName: 'Lina Maryana',
+    personPosition: 'Marketing Manager, DSM Firmenich',
   },
 ];

@@ -12,41 +12,41 @@ import { cn } from '@/lib/utils';
 
 const WorkExperience = () => {
   return (
-    <Section id='experience' title='My Work Experience' className=''>
+    <Section id='experience' title='My Work Experience'>
       <div className='hidden md:block'>
         <CardsExperience>
           <CompanyCard
-            icon='/company-logos/trust-pilot.svg'
-            company='Trustpilot'
-            year='2021-2024'
+            icon='/company-logos/novus.svg'
+            company='Novus International'
+            year='2020-2023'
           />
           <CompanyExperience
-            position='Frontend Developer'
-            jobdesc='Built responsive web interfaces using modern frameworks like React.js, ensuring seamless integration with backend systems. Optimized performance, implemented accessible designs, and delivered clean, reusable code to enhance user experience and scalability.'
+            position='Frontend Developer - UI/UX Engineer'
+            jobdesc='Led the front-end architecture of internal dashboard and CRM tools to optimize product sales tracking and distributor engagement using React, TypeScript, and Tailwind CSS. Collaborated with cross-functional teams (technical & commercial) to develop tailored web solutions for major accounts such as DeHeus, Wonokoyo, and Malindo, ensuring high usability and responsive design. Built reusable UI components with strong focus on UX consistency, incorporating feedback from end-users and stakeholders through iterative improvements.'
           />
         </CardsExperience>
 
         <CardsExperience className='my-16'>
           <CompanyCard
-            icon='/company-logos/postman.svg'
-            company='Postman'
-            year='2021-2024'
+            icon='/company-logos/DSM-Firmenich.svg'
+            company='DSM Firmenich'
+            year='2017-2020'
           />
           <CompanyExperience
-            position='Frontend Developer'
-            jobdesc='Built responsive web interfaces using modern frameworks like React.js, ensuring seamless integration with backend systems. Optimized performance, implemented accessible designs, and delivered clean, reusable code to enhance user experience and scalability.'
+            position='Web Application Developer'
+            jobdesc='Developed internal sales and performance tracking web apps using HTML, CSS, and React, supporting account plans and KPI visualization for key partners like JAPFA and Sido Agung. Implemented dynamic dashboards and account profiling tools enabling account managers to benchmark competitors and visualize sales forecasts efficiently. Optimized cross-browser compatibility and performance to ensure smooth client experiences across devices. Took ownership of technical documentation and code refactoring to maintain long-term code health and team scalability.'
           />
         </CardsExperience>
 
         <CardsExperience>
           <CompanyCard
-            icon='/company-logos/spotify.svg'
-            company='Spotify'
-            year='2021-2024'
+            icon='/company-logos/Alltech.svg'
+            company='Alltech Inc.'
+            year='2014-2017'
           />
           <CompanyExperience
-            position='Frontend Developer'
-            jobdesc='Built responsive web interfaces using modern frameworks like React.js, ensuring seamless integration with backend systems. Optimized performance, implemented accessible designs, and delivered clean, reusable code to enhance user experience and scalability.'
+            position='Jr. Frontend Developer'
+            jobdesc='Contributed to UI/UX design sprints and supported web feature rollouts aligned with product marketing initiatives. Supported collaboration with marketing and technical units to align digital tools with quarterly product campaign goals. Assisted in designing and deploying web-based technical support tools to streamline trial data tracking and poultry farm feedback, maintained and updated web portals used by distributors and internal teams using JavaScript, HTML, and CSS.'
             isLast={true}
           />
         </CardsExperience>
@@ -55,30 +55,30 @@ const WorkExperience = () => {
       {/* Mobile */}
       <div className='block md:hidden'>
         <div className='relative space-y-6'>
-          <div className='absolute left-4'></div>
+          <div className='absolute left-4' />
 
           <MobileExperienceItem
-            icon='/company-logos/trust-pilot.svg'
-            company='Trustpilot'
-            year='2021-2024'
-            position='Frontend Developer'
-            jobdesc='Built responsive web interfaces using modern frameworks like React.js, ensuring seamless integration with backend systems. Optimized performance, implemented accessible designs, and delivered clean, reusable code to enhance user experience and scalability.'
+            icon='/company-logos/novus.svg'
+            company='Novus International'
+            year='2020-2023'
+            position='Frontend Developer - UI/UX Engineer'
+            jobdesc='Led the front-end architecture of internal dashboard and CRM tools to optimize product sales tracking and distributor engagement using React, TypeScript, and Tailwind CSS. Designed and maintained user-centric interfaces that supported the regional team in trial monitoring and technical support—improving task efficiency by 30%. Collaborated with cross-functional teams (technical & commercial) to develop tailored web solutions for major accounts such as DeHeus, Wonokoyo, and Malindo, ensuring high usability and responsive design. Built reusable UI components with strong focus on UX consistency, incorporating feedback from end-users and stakeholders through iterative improvements. Integrated customer support systems and marketing analytics tools using modern JavaScript frameworks and APIs.'
           />
 
           <MobileExperienceItem
-            icon='/company-logos/postman.svg'
-            company='Postman'
-            year='2021-2024'
-            position='Frontend Developer'
-            jobdesc='Built responsive web interfaces using modern frameworks like React.js, ensuring seamless integration with backend systems. Optimized performance, implemented accessible designs, and delivered clean, reusable code to enhance user experience and scalability.'
+            icon='/company-logos/DSM-Firmenich.svg'
+            company='DSM Firmenich'
+            year='2017-2020'
+            position='Web Application Developer'
+            jobdesc='Developed internal sales and performance tracking web apps using HTML, CSS, and React, supporting account plans and KPI visualization for key partners like JAPFA and Sido Agung. Implemented dynamic dashboards and account profiling tools enabling account managers to benchmark competitors and visualize sales forecasts efficiently. Optimized cross-browser compatibility and performance to ensure smooth client experiences across devices. Took ownership of technical documentation and code refactoring to maintain long-term code health and team scalability.'
           />
 
           <MobileExperienceItem
-            icon='/company-logos/spotify.svg'
-            company='Spotify'
-            year='2021-2024'
-            position='Frontend Developer'
-            jobdesc='Built responsive web interfaces using modern frameworks like React.js, ensuring seamless integration with backend systems. Optimized performance, implemented accessible designs, and delivered clean, reusable code to enhance user experience and scalability.'
+            icon='/company-logos/Alltech.svg'
+            company='Alltech Inc.'
+            year='2014-2017'
+            position='Jr. Frontend Developer'
+            jobdesc='Contributed to UI/UX design sprints and supported web feature rollouts aligned with product marketing initiatives. Supported collaboration with marketing and technical units to align digital tools with quarterly product campaign goals. Assisted in designing and deploying web-based technical support tools to streamline trial data tracking and poultry farm feedback, maintained and updated web portals used by distributors and internal teams using JavaScript, HTML, and CSS.'
             isLast={true}
           />
         </div>

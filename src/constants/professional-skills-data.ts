@@ -17,42 +17,50 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     icon: '/icons/expert-skill/scss.svg',
     title: 'CSS',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Styling web pages with advanced CSS techniques for responsive and attractive designs.',
     percentage: '85',
   },
   {
     icon: '/icons/expert-skill/JS.svg',
-    title: 'Javascript',
+    title: 'JavaScript',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Creating interactive web experiences with modern JavaScript features and best practices.',
+    percentage: '90',
+  },
+  {
+    icon: '/icons/expert-skill/TS.svg',
+    title: 'TypeScript',
+    description:
+      'Adding static typing to JavaScript to catch errors early and improve code quality.',
     percentage: '90',
   },
   {
     icon: '/icons/expert-skill/react.svg',
-    title: 'React JS',
+    title: 'React',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Developing efficient and reusable UI components with React and its ecosystem.',
     percentage: '90',
   },
   {
-    icon: '/icons/expert-skill/mongo.svg',
-    title: 'UI/UX',
+    icon: '/icons/expert-skill/framer-motion.svg',
+    title: 'Framer Motion',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Creating smooth and engaging animations for a better user experience.',
     percentage: '95',
   },
+
   {
-    icon: '/icons/expert-skill/tailwind.png',
-    title: 'Tailwind',
+    icon: '/icons/expert-skill/tailwind-logo.svg',
+    title: 'Tailwind CSS',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Rapidly building modern websites using utility-first CSS framework for efficient development.',
     percentage: '80',
   },
   {
     icon: '/icons/expert-skill/react.svg',
-    title: 'React JS',
+    title: 'React',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Developing efficient and reusable UI components with React and its ecosystem.',
     percentage: '95',
   },
 
@@ -65,53 +73,45 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
   },
   {
     icon: '/icons/expert-skill/JS.svg',
-    title: 'Javascript',
+    title: 'JavaScript',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Creating interactive web experiences with modern JavaScript features and best practices.',
     percentage: '80',
   },
   {
     icon: '/icons/expert-skill/scss.svg',
     title: 'CSS',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Styling web pages with advanced CSS techniques for responsive and attractive designs.',
     percentage: '75',
   },
   {
-    icon: '/icons/expert-skill/mongo.svg',
-    title: 'Mongo DB',
+    icon: '/icons/expert-skill/framer-motion.svg',
+    title: 'Framer Motion',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
-    percentage: '90',
-  },
-
-  {
-    icon: '/icons/expert-skill/docker.svg',
-    title: 'Docker',
-    description:
-      'Building the structure of web pages with semantic markup for accessibility.',
-    percentage: '85',
+      'Creating smooth and engaging animations for a better user experience.',
+    percentage: '95',
   },
   {
     icon: '/icons/expert-skill/JS.svg',
-    title: 'Javascript',
+    title: 'JavaScript',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Creating interactive web experiences with modern JavaScript features and best practices.',
     percentage: '80',
   },
 
   {
-    icon: '/icons/expert-skill/docker.svg',
-    title: 'Docker',
+    icon: '/icons/expert-skill/tailwind-logo.svg',
+    title: 'Tailwind CSS',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
-    percentage: '85',
+      'Rapidly building modern websites using utility-first CSS framework for efficient development.',
+    percentage: '80',
   },
   {
     icon: '/icons/expert-skill/react.svg',
-    title: 'React JS',
+    title: 'React',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Developing efficient and reusable UI components with React and its ecosystem.',
     percentage: '95',
   },
   {
@@ -122,17 +122,17 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     percentage: '95',
   },
   {
-    icon: '/icons/expert-skill/mongo.svg',
-    title: 'Mongo DB',
+    icon: '/icons/expert-skill/framer-motion.svg',
+    title: 'Framer Motion',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
-    percentage: '90',
+      'Creating smooth and engaging animations for a better user experience.',
+    percentage: '95',
   },
   {
     icon: '/icons/expert-skill/scss.svg',
     title: 'CSS',
     description:
-      'Building the structure of web pages with semantic markup for accessibility.',
+      'Styling web pages with advanced CSS techniques for responsive and attractive designs.',
     percentage: '75',
   },
 ];

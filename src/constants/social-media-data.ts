@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 
-import iconBall from '../../public/icons/socmed-ball.svg';
+import iconGithub from '../../public/icons/socmed-github.svg';
 import iconInstagram from '../../public/icons/socmed-instagram.svg';
 import iconLinkedin from '../../public/icons/socmed-linkedin.svg';
 
@@ -13,10 +13,10 @@ type SocialMediaDataProps = {
 
 export const SocialMediaData: SocialMediaDataProps[] = [
   {
-    icon: iconBall,
+    icon: iconGithub,
     href: 'https://github.com/vetacode?tab=repositories',
     target: '_blank',
-    alt: 'ball',
+    alt: 'github',
   },
   {
     icon: iconInstagram,

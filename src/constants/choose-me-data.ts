@@ -36,7 +36,7 @@ const ChooseMeData: ChooseMeDataProps[] = [
     icon2: '/icons/x.svg',
   },
   {
-    title: 'UI Design Proficiency (Figma)',
+    title: 'UI/UX Design Proficiency (Figma)',
     icon1: '/icons/check-orange.svg',
     icon2: '/icons/x.svg',
   },

@@ -82,8 +82,8 @@ const Navbar = () => {
       <div className='flex-between custom-container md:h-21.3 h-20'>
         <Link href='#home'>
           <Image
-            // src='/company-logos/company-logo.svg'
-            src='/company-logos/PixelPerfectBox2.png'
+            src='/company-logos/PerfectPixelCapsule.svg'
+            // src='/company-logos/PixelPerfectBox.png'
             alt='logo'
             width={141}
             height={32}
@@ -133,8 +133,7 @@ const Navbar = () => {
             <SheetTitle asChild className='text-color-neutral-25 py-6'>
               <Link href='#home'>
                 <Image
-                  // src='/company-logos/company-logo-black.svg'
-                  src='/company-logos/PixelPerfectBox.png'
+                  src='/company-logos/PerfectPixelCapsule.svg'
                   alt='logo-black'
                   width={141}
                   height={32}
