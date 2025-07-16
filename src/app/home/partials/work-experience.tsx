@@ -16,7 +16,7 @@ const WorkExperience = () => {
       <div className='hidden md:block'>
         <CardsExperience>
           <CompanyCard
-            icon='/company-logos/novus.svg'
+            icon='/company-logos/Novus.svg'
             company='Novus International'
             year='2020-2023'
           />
@@ -28,7 +28,7 @@ const WorkExperience = () => {
 
         <CardsExperience className='my-16'>
           <CompanyCard
-            icon='/company-logos/DSM-Firmenich.svg'
+            icon='/company-logos/DSM.svg'
             company='DSM Firmenich'
             year='2017-2020'
           />
@@ -58,7 +58,7 @@ const WorkExperience = () => {
           <div className='absolute left-4' />
 
           <MobileExperienceItem
-            icon='/company-logos/novus.svg'
+            icon='/company-logos/Novus.svg'
             company='Novus International'
             year='2020-2023'
             position='Frontend Developer - UI/UX Engineer'
@@ -66,7 +66,7 @@ const WorkExperience = () => {
           />
 
           <MobileExperienceItem
-            icon='/company-logos/DSM-Firmenich.svg'
+            icon='/company-logos/DSM.svg'
             company='DSM Firmenich'
             year='2017-2020'
             position='Web Application Developer'
