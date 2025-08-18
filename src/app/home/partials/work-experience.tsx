@@ -28,7 +28,7 @@ const WorkExperience = () => {
 
         <CardsExperience className='my-16'>
           <CompanyCard
-            icon='/company-logos/DSM.svg'
+            icon='/company-logos/DSM-Firmenich.svg'
             company='DSM Firmenich'
             year='2017-2020'
           />
@@ -66,7 +66,7 @@ const WorkExperience = () => {
           />
 
           <MobileExperienceItem
-            icon='/company-logos/DSM.svg'
+            icon='/company-logos/DSM-Firmenich.svg'
             company='DSM Firmenich'
             year='2017-2020'
             position='Web Application Developer'
