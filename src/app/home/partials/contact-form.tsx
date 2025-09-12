@@ -1,6 +1,4 @@
 'use client';
-
-import emailjs from '@emailjs/browser';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Image from 'next/image';
 import React from 'react';
@@ -162,19 +160,19 @@ const SendMessageCard: React.FC<SendMessageCardProps> = ({
     try {
       setLoading(true);
 
-      await emailjs.send(
-        // config.emailjs.serviceId,
-        // config.emailjs.templateId,
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-        {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
           name: data.name,
           email: data.email,
           message: data.message,
-        },
-        // config.emailjs.publicKey
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
-      );
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
 
       form.reset(
         { name: '', email: '', message: '' },
