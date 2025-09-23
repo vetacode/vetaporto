@@ -50,6 +50,7 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+    console.log('PRIVATE_KEY exists:', !!process.env.EMAILJS_PRIVATE_KEY);
 
     // Send via EmailJS REST API on the server with private key authentication
     // Docs: https://www.emailjs.com/docs/rest-api/send/
