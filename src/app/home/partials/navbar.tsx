@@ -83,7 +83,6 @@ const Navbar = () => {
         <Link href='#home'>
           <Image
             src='/company-logos/PerfectPixelCapsule.svg'
-            // src='/company-logos/PixelPerfectBox.png'
             alt='logo'
             width={141}
             height={32}
@@ -96,7 +95,7 @@ const Navbar = () => {
               <li key={data.href}>
                 <Link
                   href={data.href}
-                  className='hover:text-md-extrabold p-2 transition-all duration-300'
+                  className='text-md-regular after-h-0.5 after:bg-neutral-25 repeat-infinite hover:after:animate-underline relative cursor-pointer p-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-200 after:content-[""] hover:after:w-full'
                 >
                   {data.label}
                 </Link>

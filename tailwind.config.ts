@@ -54,6 +54,7 @@ export default {
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+        underline: 'underline 1.5s ease-in-out infinite',
       },
       backgroundImage: {
         'blue-gradient': 'linear-gradient(90deg, #002c6e 0%, #0c4eaf 100%)',
@@ -66,6 +67,11 @@ export default {
         'marquee-vertical': {
           from: { transform: 'translateY(0)' },
           to: { transform: 'translateY(calc(-100% - var(--gap)))' },
+        },
+        underline: {
+          '0%': { width: '0%' },
+          '50%': { width: '100%' },
+          '100%': { width: '0%' },
         },
       },
     },
