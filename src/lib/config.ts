@@ -31,10 +31,7 @@ export const config = {
       'EMAILJS_PUBLIC_KEY',
       'NEXT_PUBLIC_EMAILJS_PUBLIC_KEY'
     ),
-    privateKey: getRequiredEnvWithFallback(
-      'EMAILJS_PRIVATE_KEY',
-      'NEXT_PUBLIC_EMAILJS_PRIVATE_KEY'
-    ),
+    privateKey: getRequiredEnvWithFallback('EMAILJS_PRIVATE_KEY'),
   },
 } as const;
 

@@ -95,7 +95,7 @@ const Navbar = () => {
               <li key={data.href}>
                 <Link
                   href={data.href}
-                  className='text-md-regular after-h-0.5 after:bg-neutral-25 repeat-infinite hover:after:animate-underline relative cursor-pointer p-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-200 after:content-[""] hover:after:w-full'
+                  className='text-md-regular after-h-0.5 repeat-infinite hover:after:animate-underline relative cursor-pointer p-2 transition-all duration-200 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-purple-300 after:transition-all after:duration-200 after:content-[""] hover:text-purple-300 hover:after:w-full'
                 >
                   {data.label}
                 </Link>
