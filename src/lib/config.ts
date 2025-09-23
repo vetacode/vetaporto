@@ -11,7 +11,7 @@ const getRequiredEnvWithFallback = (
   const value = primary ?? fallback;
   if (!value) {
     throw new Error(
-      `Missing required environment variable: ${primaryKey}${fallbackKey ? ` (or fallback ${fallbackKey})` : ''}`
+      `Missing required environment variable: ${primaryKey} ${fallbackKey ? `(or fallback ${fallbackKey})` : ''}`
     );
   }
   return value;
