@@ -10,7 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-neutral-25 rounded-full text-sm-medium font-medium text-neutral-950 hover:shadow-[0_0_17px_rgba(255,255,255,0.9)] hover:bg-neutral-25 active:bg-primary-100 transition-all duration-300 ease cursor-pointer',
+          'bg-neutral-25 rounded-full text-sm-medium font-medium text-neutral-950 hover:ring-3 hover:ring-primary-300  active:ring-4 active:bg-primary-100 transition-all duration-500 ease cursor-pointer',
+        // 'bg-neutral-25 rounded-full text-sm-medium font-medium text-neutral-950 hover:shadow-[0_0_17px_rgba(255,255,255,0.9)] hover:bg-neutral-25 active:bg-primary-100 transition-all duration-300 ease cursor-pointer',
 
         secondary:
           'bg-primary-300 rounded-full text-neutral-25 text-sm-medium font-medium md:text-md-medium hover:shadow-[0_0_17px_rgba(102,0,235,0.6)] transition-all duration-300 ease cursor-pointer',

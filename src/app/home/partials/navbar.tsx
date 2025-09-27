@@ -95,7 +95,7 @@ const Navbar = () => {
               <li key={data.href}>
                 <Link
                   href={data.href}
-                  className='text-md-regular after-h-0.5 repeat-infinite hover:after:animate-underline relative cursor-pointer p-2 transition-all duration-200 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-purple-300 after:transition-all after:duration-200 after:content-[""] hover:text-purple-300 hover:after:w-full'
+                  className='text-md-regular after-h-0.5 repeat-infinite hover:after:animate-underline after:bg-primary-100 hover:text-primary-100 relative cursor-pointer p-2 transition-all duration-200 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-200 after:content-[""] hover:after:w-full'
                 >
                   {data.label}
                 </Link>
@@ -103,10 +103,7 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <Button
-          asChild
-          className='!hidden transition-all duration-300 lg:!flex'
-        >
+        <Button asChild className='!hidden transition-all lg:flex!'>
           <Link href='#contact'>
             <Image
               src='/icons/mail-black.svg'
