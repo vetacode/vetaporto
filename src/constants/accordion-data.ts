@@ -21,13 +21,13 @@ export const accordionData: AccordionDataProps[] = [
     id: '3',
     title: 'What kind of projects do you specialize in?',
     description:
-      'I focus on building responsive, accessible, and modern web applications—mainly dashboards, landing pages, and interactive UI systems. I enjoy turning complex interfaces into intuitive experiences, and I often collaborate with designers and back-end developers to deliver cohesive, high-performing apps.',
+      'I focus on building responsive, accessible, and modern web applications, mainly dashboards, landing pages, and interactive UI systems. I enjoy turning complex interfaces into intuitive experiences, and I often collaborate with designers and back-end developers to deliver cohesive, high-performing apps.',
   },
   {
     id: '4',
     title: 'How do you handle project deadlines?',
     description:
-      'I approach deadlines with realistic planning and strong communication. I break down work into manageable milestones, track progress, and adapt quickly when priorities shift. While I value shipping on time, I also advocate for quality — it`s about delivering value, not just speed.',
+      'I approach deadlines with realistic planning and strong communication. I break down work into manageable milestones, track progress, and adapt quickly when priorities shift. While I value shipping on time, I also advocate for quality. it`s about delivering value, not just speed.',
   },
   {
     id: '5',
