@@ -178,7 +178,7 @@ const Hero = () => {
             }}
           >
             <FeatureCard
-              title='50+'
+              title='5+'
               description='Global Clients'
               className='md:display-xl-bold display-xs-bold translate-y-[5%] rotate-[5.31deg] md:translate-y-[0%]'
               style={{

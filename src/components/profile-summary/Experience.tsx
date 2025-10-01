@@ -24,7 +24,7 @@ const Experience: React.FC<ExperienceProps> = ({ className }) => (
     <div className='absolute inset-x-0 bottom-0 h-[100%] bg-gradient-to-t from-black to-transparent' />
 
     <div className='md:display-xl-bold text-base-white display-md-bold z-10 mt-19 flex w-full flex-col items-center'>
-      <h3 className='text-center'>10+ Months</h3>
+      <h3 className='text-center'>12+ Months</h3>
       <h3 className='-mt-2 text-center'>Experience</h3>
     </div>
 

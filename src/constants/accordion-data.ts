@@ -33,6 +33,6 @@ export const accordionData: AccordionDataProps[] = [
     id: '5',
     title: 'What technologies do you use?',
     description:
-      'I primarily work with React (or Next.js), Tailwind CSS, and TypeScript. For animations and rich UI, I use Framer Motion or GSAP. I also use tools like Figma for handoff, Git/GitHub for version control, and Vite for builds. I stay curious and constantly test emerging tools to keep my workflow sharp.',
+      'I primarily work with React and its ecosystem, Tailwind CSS, and TypeScript. For animations and rich UI, I use Framer Motion or GSAP. I also use tools like Figma for handoff, Git/GitHub for version control, and Vite or Next.js for builds. I stay curious and constantly test emerging tools to keep my workflow sharp.',
   },
 ];
