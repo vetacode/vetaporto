@@ -95,9 +95,9 @@ const Navbar = () => {
               <li key={data.href}>
                 <Link
                   href={data.href}
-                  className='text-md-regular relative cursor-pointer rounded-lg p-2 transition-all duration-100 ease-in-out hover:ring-3'
+                  // className='text-md-regular relative cursor-pointer rounded-full p-2 transition-all duration-100 ease-in-out hover:ring-3'
 
-                  // className='text-md-regular hover:bg-neutral-25 hover:text-primary-400 hover:text-md-semibold relative cursor-pointer rounded-lg p-2 transition-all duration-100 ease-in-out'
+                  className='text-md-regular hover:bg-neutral-25 hover:text-primary-400 hover:text-md-semibold relative cursor-pointer rounded-full p-2 transition-all duration-100 ease-in-out hover:shadow-[0_0_17px_rgba(255,255,255,0.9)]'
 
                   // after-h-0.5 repeat-infinite hover:after:animate-underline after:bg-primary-100 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-200 after:content-[""] hover:after:w-full'
                 >
