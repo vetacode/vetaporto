@@ -13,3 +13,5 @@ const response = openai.responses.create({
 });
 
 response.then((result) => console.log(result.output_text));
+
+export default OPENAI_API_KEY;
