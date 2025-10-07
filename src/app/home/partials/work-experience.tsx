@@ -14,6 +14,18 @@ const WorkExperience = () => {
   return (
     <Section id='experience' title='My Work Experience'>
       <div className='hidden md:block'>
+        <CardsExperience className='my-16'>
+          <CompanyCard
+            icon='/company-logos/Sybexcrop.png'
+            company='Sybex Animal Health & Nutrition'
+            year='2024-present'
+          />
+          <CompanyExperience
+            position='Managing Director'
+            jobdesc='Lead digital transformation initiatives to enhance data visibility, workflow efficiency, and cross-functional collaboration. Translate customer requirements into actionable, solution-oriented plans, experience directly aligned with user-centered design and front-end development. Collaborate with global teams using digital platforms for coordination and data-driven decision-making, developing remote and agile communication skills.'
+          />
+        </CardsExperience>
+
         <CardsExperience>
           <CompanyCard
             icon='/company-logos/Novus.svg'
@@ -21,8 +33,8 @@ const WorkExperience = () => {
             year='2020-2023'
           />
           <CompanyExperience
-            position='Frontend Developer - UI/UX Engineer'
-            jobdesc='Led the front-end architecture of internal dashboard and CRM tools to optimize product sales tracking and distributor engagement using React, TypeScript, and Tailwind CSS. Collaborated with cross-functional teams (technical & commercial) to develop tailored web solutions for major accounts such as DeHeus, Wonokoyo, and Malindo, ensuring high usability and responsive design. Built reusable UI components with strong focus on UX consistency, incorporating feedback from end-users and stakeholders through iterative improvements.'
+            position='Customer Relationship Manager'
+            jobdesc='Applied data analysis to monitor performance metrics and optimize decision-making, a foundation for dashboard design and data visualization. Managed customer solution projects using iterative feedback loops, similar to agile development and UX improvement cycles. Utilized CRM and digital reporting tools to streamline operations, building familiarity with structured data systems and digital workflows.'
           />
         </CardsExperience>
 
@@ -33,8 +45,8 @@ const WorkExperience = () => {
             year='2017-2020'
           />
           <CompanyExperience
-            position='Web Application Developer'
-            jobdesc='Developed internal sales and performance tracking web apps using HTML, CSS, and React, supporting account plans and KPI visualization for key partners like JAPFA and Sido Agung. Implemented dynamic dashboards and account profiling tools enabling account managers to benchmark competitors and visualize sales forecasts efficiently. Optimized cross-browser compatibility and performance to ensure smooth client experiences across devices. Took ownership of technical documentation and code refactoring to maintain long-term code health and team scalability.'
+            position='Account Manager'
+            jobdesc='Integrated digital reporting and analytics in account plans, early application of structured, data-driven workflows. Translated technical information into clear, user-oriented presentations, transferable to UI design and communication in tech projects. Analyzed market and competitor data to drive strategy, sharpening analytical and visualization skills essential for front-end and AI applications.'
           />
         </CardsExperience>
 
@@ -45,8 +57,8 @@ const WorkExperience = () => {
             year='2014-2017'
           />
           <CompanyExperience
-            position='Jr. Frontend Developer'
-            jobdesc='Contributed to UI/UX design sprints and supported web feature rollouts aligned with product marketing initiatives. Supported collaboration with marketing and technical units to align digital tools with quarterly product campaign goals. Assisted in designing and deploying web-based technical support tools to streamline trial data tracking and poultry farm feedback, maintained and updated web portals used by distributors and internal teams using JavaScript, HTML, and CSS.'
+            position='Technical Sales Manager'
+            jobdesc='Developed data-based reports and dashboards to visualize performance trends, precursor to UI and front-end data presentation. Worked with marketing and technical teams to design digital materials, the foundation for visual storytelling and interface design. Coordinated technical solutions for clients, aligning functional requirements with practical implementation—mirrors front-end collaboration workflows.'
             isLast={true}
           />
         </CardsExperience>
@@ -58,27 +70,35 @@ const WorkExperience = () => {
           <div className='absolute left-4' />
 
           <MobileExperienceItem
+            icon='/company-logos/Sybexcrop.png'
+            company='Sybex Animal Health & Nutrition'
+            year='2024-present'
+            position='Managing Director'
+            jobdesc='Lead digital transformation initiatives to enhance data visibility, workflow efficiency, and cross-functional collaboration. Translate customer requirements into actionable, solution-oriented plans, experience directly aligned with user-centered design and front-end development. Collaborate with global teams using digital platforms for coordination and data-driven decision-making, developing remote and agile communication skills.'
+          />
+
+          <MobileExperienceItem
             icon='/company-logos/Novus.svg'
             company='Novus International'
             year='2020-2023'
-            position='Frontend Developer - UI/UX Engineer'
-            jobdesc='Led the front-end architecture of internal dashboard and CRM tools to optimize product sales tracking and distributor engagement using React, TypeScript, and Tailwind CSS. Designed and maintained user-centric interfaces that supported the regional team in trial monitoring and technical support—improving task efficiency by 30%. Collaborated with cross-functional teams (technical & commercial) to develop tailored web solutions for major accounts such as DeHeus, Wonokoyo, and Malindo, ensuring high usability and responsive design. Built reusable UI components with strong focus on UX consistency, incorporating feedback from end-users and stakeholders through iterative improvements. Integrated customer support systems and marketing analytics tools using modern JavaScript frameworks and APIs.'
+            position='Customer Relationship Manager'
+            jobdesc='Applied data analysis to monitor performance metrics and optimize decision-making, a foundation for dashboard design and data visualization. Managed customer solution projects using iterative feedback loops, similar to agile development and UX improvement cycles. Utilized CRM and digital reporting tools to streamline operations, building familiarity with structured data systems and digital workflows.'
           />
 
           <MobileExperienceItem
             icon='/company-logos/DSM-Firmenich.svg'
             company='DSM Firmenich'
             year='2017-2020'
-            position='Web Application Developer'
-            jobdesc='Developed internal sales and performance tracking web apps using HTML, CSS, and React, supporting account plans and KPI visualization for key partners like JAPFA and Sido Agung. Implemented dynamic dashboards and account profiling tools enabling account managers to benchmark competitors and visualize sales forecasts efficiently. Optimized cross-browser compatibility and performance to ensure smooth client experiences across devices. Took ownership of technical documentation and code refactoring to maintain long-term code health and team scalability.'
+            position='Account Manager'
+            jobdesc='Integrated digital reporting and analytics in account plans—early application of structured, data-driven workflows. Translated technical information into clear, user-oriented presentations, transferable to UI design and communication in tech projects. Analyzed market and competitor data to drive strategy, sharpening analytical and visualization skills essential for front-end and AI applications.'
           />
 
           <MobileExperienceItem
             icon='/company-logos/Alltech.svg'
             company='Alltech Inc.'
             year='2014-2017'
-            position='Jr. Frontend Developer'
-            jobdesc='Contributed to UI/UX design sprints and supported web feature rollouts aligned with product marketing initiatives. Supported collaboration with marketing and technical units to align digital tools with quarterly product campaign goals. Assisted in designing and deploying web-based technical support tools to streamline trial data tracking and poultry farm feedback, maintained and updated web portals used by distributors and internal teams using JavaScript, HTML, and CSS.'
+            position='Technical Sales Manager'
+            jobdesc='Developed data-based reports and dashboards to visualize performance trends, precursor to UI and front-end data presentation. Worked with marketing and technical teams to design digital materials, the foundation for visual storytelling and interface design. Coordinated technical solutions for clients, aligning functional requirements with practical implementation—mirrors front-end collaboration workflows.'
             isLast={true}
           />
         </div>
@@ -144,9 +164,10 @@ const MobileExperienceItem: React.FC<MobileExperienceItemProps> = ({
         <Image
           src={icon}
           alt={company}
-          width={102}
+          width={120}
           height={32}
-          className='h-8 w-auto transition-all duration-300 ease-in-out hover:scale-110'
+          className='object-cover transition-all duration-300 ease-in-out hover:scale-110'
+          // className='h-8 w-auto transition-all duration-300 ease-in-out hover:scale-110'
         />
         <h3 className='text-md-semibold my-1 text-neutral-950'>{company}</h3>
         <p className='text-sm-regular mb-2 text-neutral-700'>{year}</p>

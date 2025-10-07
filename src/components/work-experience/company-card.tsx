@@ -17,9 +17,10 @@ export const CompanyCard: React.FC<CompanyCardProps> = ({
       <Image
         src={icon}
         alt='icon'
-        width={0}
-        height={0}
-        className='h-8 w-25.5 shrink-0 transition-all duration-300 ease-in-out hover:scale-110 md:h-12 md:w-38'
+        width={150}
+        height={100}
+        className='shrink-0 object-cover transition-all duration-300 ease-in-out hover:scale-110'
+        // className='h-8 w-25.5 shrink-0 transition-all duration-300 ease-in-out hover:scale-110 md:h-12 md:w-38'
       />
       <h3 className='md:text-xl-semibold text-md-semibold my-1 text-neutral-950 md:my-3'>
         {company}
