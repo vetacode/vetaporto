@@ -81,13 +81,20 @@ const Navbar = () => {
     >
       <div className='flex-between custom-container md:h-21.3 h-20'>
         <Link href='#home'>
-          <Image
-            src='/company-logos/PerfectPixelCapsule.svg'
-            alt='logo'
-            width={141}
-            height={32}
-            className='cursor-pointer transition-all duration-300 hover:scale-105'
-          />
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: -3 }}
+            whileTap={{ scale: 0.8, rotate: 5 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            className='z-50'
+          >
+            <Image
+              src='/company-logos/PerfectPixelCapsule.svg'
+              alt='logo'
+              width={141}
+              height={32}
+              className='cursor-pointer transition-all duration-300'
+            />
+          </motion.div>
         </Link>
         <nav className='hidden lg:block'>
           <ul className='flex-start gap-8.5'>
