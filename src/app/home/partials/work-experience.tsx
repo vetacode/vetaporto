@@ -22,7 +22,7 @@ const WorkExperience = () => {
           />
           <CompanyExperience
             position='Managing Director'
-            jobdesc='Lead digital transformation initiatives to enhance data visibility, workflow efficiency, and cross-functional collaboration. Translate customer requirements into actionable, solution-oriented plans, experience directly aligned with user-centered design and front-end development. Collaborate with global teams using digital platforms for coordination and data-driven decision-making, developing remote and agile communication skills.'
+            jobdesc='Lead digital transformation initiatives to enhance data visibility, workflow efficiency, and cross-functional collaboration. Translate customer requirements into actionable, solution-oriented plans, experience directly aligned with user-centered design and front-end development. Collaborate with global teams using digital platforms for coordination and data-driven decision-making, developing remote and agile communication skills. Coordinate technical solutions delivery, experience in interpreting user requirements and translating them into actionable solutions, a skill now applied to building user-centered interfaces. Collaborate with global technical teams, enhancing cross-border data exchange and communication workflows. Strengthened business decisions through data-driven insights and performance dashboards.'
           />
         </CardsExperience>
 
@@ -58,7 +58,7 @@ const WorkExperience = () => {
           />
           <CompanyExperience
             position='Technical Sales Manager'
-            jobdesc='Developed data-based reports and dashboards to visualize performance trends, precursor to UI and front-end data presentation. Worked with marketing and technical teams to design digital materials, the foundation for visual storytelling and interface design. Coordinated technical solutions for clients, aligning functional requirements with practical implementation—mirrors front-end collaboration workflows.'
+            jobdesc='Developed data-based reports and dashboards to visualize performance trends, precursor to UI and front-end data presentation. Worked with marketing and technical teams to design digital materials, the foundation for visual storytelling and interface design. Coordinated technical solutions for clients, aligning functional requirements with practical implementation, mirrors front-end collaboration workflows.'
             isLast={true}
           />
         </CardsExperience>
@@ -74,7 +74,7 @@ const WorkExperience = () => {
             company='Sybex Animal Health & Nutrition'
             year='2024-present'
             position='Managing Director'
-            jobdesc='Lead digital transformation initiatives to enhance data visibility, workflow efficiency, and cross-functional collaboration. Translate customer requirements into actionable, solution-oriented plans, experience directly aligned with user-centered design and front-end development. Collaborate with global teams using digital platforms for coordination and data-driven decision-making, developing remote and agile communication skills.'
+            jobdesc='Lead digital transformation initiatives to enhance data visibility, workflow efficiency, and cross-functional collaboration. Translate customer requirements into actionable, solution-oriented plans, experience directly aligned with user-centered design and front-end development. Collaborate with global teams using digital platforms for coordination and data-driven decision-making, developing remote and agile communication skills. Coordinate technical solutions delivery, experience in interpreting user requirements and translating them into actionable solutions, a skill now applied to building user-centered interfaces. Collaborate with global technical teams, enhancing cross-border data exchange and communication workflows. Strengthened business decisions through data-driven insights and performance dashboards.'
           />
 
           <MobileExperienceItem
@@ -90,7 +90,7 @@ const WorkExperience = () => {
             company='DSM Firmenich'
             year='2017-2020'
             position='Account Manager'
-            jobdesc='Integrated digital reporting and analytics in account plans—early application of structured, data-driven workflows. Translated technical information into clear, user-oriented presentations, transferable to UI design and communication in tech projects. Analyzed market and competitor data to drive strategy, sharpening analytical and visualization skills essential for front-end and AI applications.'
+            jobdesc='Integrated digital reporting and analytics in account plans, early application of structured, data-driven workflows. Translated technical information into clear, user-oriented presentations, transferable to UI design and communication in tech projects. Analyzed market and competitor data to drive strategy, sharpening analytical and visualization skills essential for front-end and AI applications.'
           />
 
           <MobileExperienceItem
@@ -98,7 +98,7 @@ const WorkExperience = () => {
             company='Alltech Inc.'
             year='2014-2017'
             position='Technical Sales Manager'
-            jobdesc='Developed data-based reports and dashboards to visualize performance trends, precursor to UI and front-end data presentation. Worked with marketing and technical teams to design digital materials, the foundation for visual storytelling and interface design. Coordinated technical solutions for clients, aligning functional requirements with practical implementation—mirrors front-end collaboration workflows.'
+            jobdesc='Developed data-based reports and dashboards to visualize performance trends, precursor to UI and front-end data presentation. Worked with marketing and technical teams to design digital materials, the foundation for visual storytelling and interface design. Coordinated technical solutions for clients, aligning functional requirements with practical implementation, mirrors front-end collaboration workflows.'
             isLast={true}
           />
         </div>
