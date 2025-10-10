@@ -42,7 +42,7 @@ const WorkExperience = () => {
           <CompanyCard
             icon='/company-logos/DSM-Firmenich.svg'
             company='DSM Firmenich'
-            year='2017-2020'
+            year='2017-2019'
           />
           <CompanyExperience
             position='Account Manager'
@@ -74,7 +74,7 @@ const WorkExperience = () => {
             company='Sybex Animal Health & Nutrition'
             year='2024-present'
             position='Managing Director'
-            jobdesc='Lead digital transformation initiatives to enhance data visibility, workflow efficiency, and cross-functional collaboration. Translate customer requirements into actionable, solution-oriented plans, experience directly aligned with user-centered design and front-end development. Collaborate with global teams using digital platforms for coordination and data-driven decision-making, developing remote and agile communication skills. Coordinate technical solutions delivery, experience in interpreting user requirements and translating them into actionable solutions, a skill now applied to building user-centered interfaces. Collaborate with global technical teams, enhancing cross-border data exchange and communication workflows. Strengthened business decisions through data-driven insights and performance dashboards.'
+            jobdesc='In my current role, I’ve been involved in improving how teams work together by introducing more efficient digital workflows and better ways to visualize data for decision-making. I help translate customer needs into practical solutions, working closely with both local and global teams to ensure alignment and clear communication. Through coordinating technical projects and supporting cross-border collaboration, I’ve gained valuable experience in understanding user requirements and turning them into actionable steps—an approach that now guides my growing interest in building user-centered digital interfaces.'
           />
 
           <MobileExperienceItem
@@ -88,7 +88,7 @@ const WorkExperience = () => {
           <MobileExperienceItem
             icon='/company-logos/DSM-Firmenich.svg'
             company='DSM Firmenich'
-            year='2017-2020'
+            year='2017-2019'
             position='Account Manager'
             jobdesc='Integrated digital reporting and analytics in account plans, early application of structured, data-driven workflows. Translated technical information into clear, user-oriented presentations, transferable to UI design and communication in tech projects. Analyzed market and competitor data to drive strategy, sharpening analytical and visualization skills essential for front-end and AI applications.'
           />
