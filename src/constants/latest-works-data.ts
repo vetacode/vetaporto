@@ -37,7 +37,7 @@ export const LatestWorksData: LatestWorksDataProps[] = [
     dashboard: 'Todo List',
     year: '2025',
     image: project3,
-    title: 'Simple Todo List Application',
+    title: 'Todo List Application',
     visit: 'Visit Website',
     icon: '/icons/arrow-right.svg',
   },

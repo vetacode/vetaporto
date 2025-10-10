@@ -54,7 +54,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'Tailwind CSS',
     description:
       'Rapidly building modern websites using utility-first CSS framework for efficient development.',
-    percentage: '80',
+    percentage: '90',
   },
   {
     icon: '/icons/expert-skill/react.svg',
@@ -90,7 +90,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'Framer Motion',
     description:
       'Building server-side rendered and statically generated React applications with optimized performance.',
-    percentage: '95',
+    percentage: '85',
   },
   {
     icon: '/icons/expert-skill/JS.svg',
@@ -105,7 +105,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'Tailwind CSS',
     description:
       'Rapidly building modern websites using utility-first CSS framework for efficient development.',
-    percentage: '80',
+    percentage: '90',
   },
   {
     icon: '/icons/expert-skill/react.svg',

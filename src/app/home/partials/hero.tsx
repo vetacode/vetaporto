@@ -125,7 +125,7 @@ const Hero = () => {
                   className='object-contain'
                 />
               }
-              description='Many Client Trust with me'
+              description='Many Peers Trust with me'
               className='t translate-y-[5%] rotate-[6.73deg] md:translate-x-[4%] md:translate-y-[0%] md:rotate-[3.15deg]'
               style={{
                 left: generateClamp(73, 313, 1440),
@@ -178,14 +178,16 @@ const Hero = () => {
             }}
           >
             <FeatureCard
-              title='5+'
-              description='Global Clients'
-              className='md:display-xl-bold display-xs-bold translate-y-[5%] rotate-[5.31deg] md:translate-y-[0%]'
+              title='25+'
+              description='Global Universities Certifications'
+              className='md:display-xl-bold display-xs-bold h-auto translate-y-[5%] rotate-[5.31deg] md:translate-y-[0%]'
               style={{
-                left: generateClamp(285, 950, 1440),
+                left: generateClamp(285, 930, 1440),
+                // left: generateClamp(285, 950, 1440),
                 top: generateClamp(443, 573, 1440),
                 width: generateClamp(148, 208, 1440),
-                height: generateClamp(136, 192, 1440),
+                height: generateClamp(147, 230, 1440),
+                // height: generateClamp(136, 192, 1440),
                 fontSize: generateClamp(24, 40, 1440),
                 lineHeight: generateClamp(36, 56, 1440),
               }}
