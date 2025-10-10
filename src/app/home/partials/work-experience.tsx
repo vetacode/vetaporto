@@ -22,7 +22,7 @@ const WorkExperience = () => {
           />
           <CompanyExperience
             position='Managing Director'
-            jobdesc='In my current role, I’ve been involved in improving how teams work together by introducing more efficient digital workflows and better ways to visualize data for decision-making. I help translate customer needs into practical solutions, working closely with both local and global teams to ensure alignment and clear communication. Through coordinating technical projects and supporting cross-border collaboration, I’ve gained valuable experience in understanding user requirements and turning them into actionable steps—an approach that now guides my growing interest in building user-centered digital interfaces.'
+            jobdesc='In my current role, I’ve been involved in improving how teams work together by introducing more efficient digital workflows and better ways to visualize data for decision-making. I help translate customer needs into practical solutions, working closely with both local and global teams to ensure alignment and clear communication. Through coordinating technical projects and supporting cross-border collaboration, I’ve gained valuable experience in understanding user requirements and turning them into actionable steps, an approach that now guides my growing interest in building user-centered digital interfaces.'
           />
         </CardsExperience>
 
@@ -74,7 +74,7 @@ const WorkExperience = () => {
             company='Sybex Animal Health & Nutrition'
             year='2024-present'
             position='Managing Director'
-            jobdesc='In my current role, I’ve been involved in improving how teams work together by introducing more efficient digital workflows and better ways to visualize data for decision-making. I help translate customer needs into practical solutions, working closely with both local and global teams to ensure alignment and clear communication. Through coordinating technical projects and supporting cross-border collaboration, I’ve gained valuable experience in understanding user requirements and turning them into actionable steps—an approach that now guides my growing interest in building user-centered digital interfaces.'
+            jobdesc='In my current role, I’ve been involved in improving how teams work together by introducing more efficient digital workflows and better ways to visualize data for decision-making. I help translate customer needs into practical solutions, working closely with both local and global teams to ensure alignment and clear communication. Through coordinating technical projects and supporting cross-border collaboration, I’ve gained valuable experience in understanding user requirements and turning them into actionable steps, an approach that now guides my growing interest in building user-centered digital interfaces.'
           />
 
           <MobileExperienceItem
