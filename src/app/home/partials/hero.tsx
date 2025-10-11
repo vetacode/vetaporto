@@ -183,11 +183,9 @@ const Hero = () => {
               className='md:display-xl-bold display-xs-bold h-auto translate-y-[5%] rotate-[5.31deg] md:translate-y-[0%]'
               style={{
                 left: generateClamp(285, 930, 1440),
-                // left: generateClamp(285, 950, 1440),
                 top: generateClamp(443, 573, 1440),
                 width: generateClamp(148, 208, 1440),
                 height: generateClamp(147, 230, 1440),
-                // height: generateClamp(136, 192, 1440),
                 fontSize: generateClamp(24, 40, 1440),
                 lineHeight: generateClamp(36, 56, 1440),
               }}
