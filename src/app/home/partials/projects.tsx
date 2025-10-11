@@ -8,8 +8,7 @@ import { LatestWorksData } from '@/constants/latest-works-data';
 
 const LatestWork = () => {
   return (
-    <Section id='projects' title='My Latest Work' className='!md:pb-16'>
-      {/* why the important doesnt work??? */}
+    <Section id='projects' title='My Latest Work' className='md:!pb-16'>
       <Cards>
         {LatestWorksData.map((work, index) => (
           <Card
