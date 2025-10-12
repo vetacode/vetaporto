@@ -18,21 +18,21 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'CSS',
     description:
       'Styling web pages with advanced CSS techniques for responsive and attractive designs.',
-    percentage: '85',
+    percentage: '90',
   },
   {
     icon: '/icons/expert-skill/JS.svg',
     title: 'JavaScript',
     description:
       'Creating interactive web experiences with modern JavaScript features and best practices.',
-    percentage: '90',
+    percentage: '80',
   },
   {
     icon: '/icons/expert-skill/TS.svg',
     title: 'TypeScript',
     description:
       'Adding static typing to JavaScript to catch errors early and improve code quality.',
-    percentage: '90',
+    percentage: '80',
   },
   {
     icon: '/icons/expert-skill/react.svg',
@@ -46,7 +46,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'Next.js',
     description:
       'Building server-side rendered and statically generated React applications with optimized performance.',
-    percentage: '95',
+    percentage: '90',
   },
 
   {
@@ -61,7 +61,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'React',
     description:
       'Developing efficient and reusable UI components with React and its ecosystem.',
-    percentage: '95',
+    percentage: '90',
   },
 
   {
@@ -83,7 +83,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'CSS',
     description:
       'Styling web pages with advanced CSS techniques for responsive and attractive designs.',
-    percentage: '75',
+    percentage: '90',
   },
   {
     icon: '/icons/expert-skill/framer-motion.svg',
@@ -112,7 +112,7 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'React',
     description:
       'Developing efficient and reusable UI components with React and its ecosystem.',
-    percentage: '95',
+    percentage: '90',
   },
   {
     icon: '/icons/expert-skill/html.svg',
@@ -126,14 +126,14 @@ export const ProfessionalSkillsData: ProfessionalSkillsDataProps[] = [
     title: 'Next.js',
     description:
       'Building server-side rendered and statically generated React applications with optimized performance.',
-    percentage: '95',
+    percentage: '90',
   },
   {
     icon: '/icons/expert-skill/scss.svg',
     title: 'CSS',
     description:
       'Styling web pages with advanced CSS techniques for responsive and attractive designs.',
-    percentage: '75',
+    percentage: '90',
   },
 ];
 
