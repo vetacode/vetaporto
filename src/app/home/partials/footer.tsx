@@ -28,7 +28,7 @@ const Footer = () => {
             </motion.div>
           </Link>
           <p className='md:text-md-regular text-xs-regular text-neutral-25 md:pt-1'>
-            © 2025 Fiqrie Rahman. All rights reserved.
+            © {new Date().getFullYear()} Fiqrie Rahman. All rights reserved.
           </p>
         </div>
         <div className='flex gap-4'>
