@@ -14,7 +14,7 @@ type SocialMediaDataProps = {
 export const SocialMediaData: SocialMediaDataProps[] = [
   {
     icon: iconGithub,
-    href: 'https://github.com/vetacode?tab=repositories',
+    href: 'https://github.com/vetacode',
     target: '_blank',
     alt: 'github',
   },
