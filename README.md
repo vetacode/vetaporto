@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fiqrie's Portfolio — Front-End Engineer
 
-## Getting Started
+![Project Preview](./assets/portfolio-screenshot.png)
 
-First, run the development server:
+<!-- Replace with your screenshot or a demo GIF -->
+
+## 🌐 Live Demo
+
+**Live Site:** [fiqrie-portfolio.vercel.app](https://fiqrie-portfolio.vercel.app/)
+
+---
+
+## 📖 Overview
+
+This is my personal **Front-End Developer Portfolio**, built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. It showcases my skills, professional experience, and selected projects, along with reusable UI components and smooth page transitions for a modern, minimal design.
+
+The portfolio is deployed on **Vercel** and optimized for performance, accessibility, and SEO.
+
+---
+
+## ✨ Features
+
+* 🚀 **Next.js App Router** structure with dynamic routing
+* 🎨 **Tailwind CSS** for responsive modern design
+* 🧩 Modular architecture with reusable components
+* 🧠 AI integration directory (future-ready)
+* 📱 Fully responsive for desktop and mobile
+* 💡 Clean, semantic TypeScript with ESLint and Prettier setup
+* ⚙️ Deployed seamlessly to **Vercel**
+
+---
+
+## 🗂️ Project Structure
+
+```
+VETAPORTO/
+├── .next/
+├── public/
+├── src/
+│   ├── AI/                    # AI-related components (future integrations)
+│   ├── app/
+│   │   ├── api/              # API routes
+│   │   ├── home/partials/    # Homepage UI sections
+│   │   │   ├── black-band.tsx
+│   │   │   ├── choose-me.tsx
+│   │   │   ├── contact-form.tsx
+│   │   │   ├── hero.tsx
+│   │   │   ├── navbar.tsx
+│   │   │   ├── footer.tsx
+│   │   │   ├── projects.tsx
+│   │   │   └── work-experience.tsx
+│   │   ├── layout.tsx        # Main layout
+│   │   ├── page.tsx          # Homepage
+│   ├── components/
+│   │   ├── profile-summary/  # About and skills sections
+│   │   ├── work-experience/  # Career details
+│   │   └── ui/               # Reusable UI components (buttons, dialogs, etc.)
+│   │       ├── button.tsx
+│   │       ├── form.tsx
+│   │       ├── input.tsx
+│   │       └── textarea.tsx
+│   ├── styles/
+│   │   └── globals.css       # Global styles
+│   └── favicon.ico
+└── README.md
+```
+
+---
+
+## 🧠 Tech Stack
+
+| Category             | Technology                                    |
+| -------------------- | --------------------------------------------- |
+| Framework            | [Next.js 14](https://nextjs.org/)             |
+| Language             | [TypeScript](https://www.typescriptlang.org/) |
+| Styling              | [Tailwind CSS](https://tailwindcss.com/)      |
+| Deployment           | [Vercel](https://vercel.com/)                 |
+| Linting & Formatting | ESLint + Prettier                             |
+
+---
+
+## 💼 Sections
+
+* **Hero Section:** Introduction with a call-to-action.
+* **About / Profile Summary:** Overview of experience, goals, and personal statement.
+* **Professional Skills:** Visual list of technical proficiencies.
+* **Projects:** Featured portfolio projects with descriptions and links.
+* **Work Experience:** Company experience timeline.
+* **Contact Form:** Interactive contact form with input validation.
+* **Footer:** Quick links and contact info.
+
+---
+
+## 🛠️ Setup & Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/<your-username>/portfolio.git
+cd portfolio
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Open in browser:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📸 Screenshots / Demo
 
-To learn more about Next.js, take a look at the following resources:
+Add your portfolio screenshots or GIFs here:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+assets/
+ ├── portfolio-screenshot.png
+ └── portfolio-demo.gif
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployed with **Vercel**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+vercel deploy
+```
+
+---
+
+## 🧩 Future Improvements
+
+* AI-powered resume generator integration (src/AI)
+* Dark mode toggle
+* CMS integration (e.g., Sanity or Contentlayer)
+* Add analytics dashboard
+
+---
+
+## 🧑‍💻 Author
+
+**Fiqrie**
+Front-End Developer — passionate about building accessible, interactive web experiences.
+
+🌐 [Portfolio](https://fiqrie-portfolio.vercel.app/)
+🐙 [GitHub](https://github.com/vetacode)
+
+---
+
+## 🪪 License
+
+MIT © 2025 Fiqrie
