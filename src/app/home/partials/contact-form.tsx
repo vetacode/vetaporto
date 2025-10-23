@@ -86,7 +86,7 @@ const WaitingForYouCard: React.FC<WaitingForYouCardProps> = ({ className }) => {
           I&apos;ve been waiting for you.
         </h3>
         <h4 className='md:text-lg-medium text-md-medium text-neutral-950'>
-          Fill in the form or Send us an email
+          Fill in the form or Send me an email
         </h4>
       </div>
 
