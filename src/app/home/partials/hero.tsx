@@ -179,7 +179,7 @@ const Hero = () => {
           >
             <FeatureCard
               title='25+'
-              description='Global Universities Certifications'
+              description='Global Certifications'
               className='md:display-xl-bold display-xs-bold h-auto translate-y-[5%] rotate-[5.31deg] md:translate-y-[0%]'
               style={{
                 left: generateClamp(285, 930, 1440),
