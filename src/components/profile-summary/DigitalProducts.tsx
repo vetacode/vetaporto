@@ -28,9 +28,9 @@ const DigitalProducts: React.FC<DigitalProductsProps> = ({ className }) => (
     </h3>
 
     <div className='mt-8 flex flex-col gap-6 md:mt-0 md:flex-row md:gap-9.75'>
-      <StatCard value='3+' label=' Universities Graduates' />
-      <StatCard value='99%' label=' Achievements Grade' />
-      <StatCard value='5+' label='Projects Delivered' />
+      <StatCard value='29+' label='GitHub Streak' />
+      <StatCard value='99%' label='Achievements Grade' />
+      <StatCard value='6+' label='Projects Delivered' />
     </div>
 
     <div
