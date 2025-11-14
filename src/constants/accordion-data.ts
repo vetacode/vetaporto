@@ -7,15 +7,14 @@ type AccordionDataProps = {
 export const accordionData: AccordionDataProps[] = [
   {
     id: '1',
-    title: 'What’s your approach to front-end development?',
+    title: `What’s your approach to front-end development?`,
     description:
       'I focus on clean, maintainable code and prioritize user experience. My approach involves close collaboration with designers to ensure exact implementation and seamless interactions across all devices.',
   },
   {
     id: '2',
     title: 'How do you ensure websites load quickly and efficiently?',
-    description:
-      'Performance is always a priority. I optimize assets by compressing images, minifying CSS/JS, and implementing lazy loading where needed. I also leverage browser caching, code splitting (especially with React/Vite), and use performance monitoring tools like Lighthouse and WebPageTest. I believe fast UX is a form of respect to the user.',
+    description: `Website performance is non-negotiable. I optimize assets (image compression, CSS/JS minification), use efficient O(1)/O(n) logic, apply lazy loading and caching with WeakMap, and rely on browser caching and code splitting to keep everything fast. Tools like Lighthouse and WebPageTest help me fine-tune performance. A fast user experience is my way of respecting the user's time.`,
   },
   {
     id: '3',
