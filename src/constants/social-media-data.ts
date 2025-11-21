@@ -20,7 +20,7 @@ export const SocialMediaData: SocialMediaDataProps[] = [
   },
   {
     icon: iconInstagram,
-    href: 'https://www.instagram.com/veta.code/',
+    href: 'https://www.instagram.com/vicvetacode/',
     target: '_blank',
     alt: 'instagram',
   },
