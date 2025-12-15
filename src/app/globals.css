@@ -289,7 +289,7 @@ body {
 img {
   /* user-select: none; */
   /* -webkit-user-select: none; */
-  /* user-drag: none; */
-  /* -webkit-user-drag: none; */
+  user-drag: none;
+  -webkit-user-drag: none;
   touch-action: none;
 }
