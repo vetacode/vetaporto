@@ -5,7 +5,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Vic Vetacode',
-  description: 'Fiqrie Rahman - Front-End Developer Portfolio.',
+  description: 'Fiqrie Rahman - Software Developer Portfolio.',
 };
 
 const poppins = Poppins({
