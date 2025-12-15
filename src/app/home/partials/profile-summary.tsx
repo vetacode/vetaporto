@@ -8,6 +8,7 @@ import Experience from '@/components/profile-summary/Experience';
 import ExpertSkill from '@/components/profile-summary/ExpertSkill';
 import PersonBlock from '@/components/profile-summary/PersonBlock';
 import WhyChoose from '@/components/profile-summary/WhyChoose';
+import { animationProps } from '@/utilities/animations';
 
 export const ProfileSummaryBase: React.FC = () => {
   return (
@@ -27,23 +28,20 @@ export const ProfileSummaryBase: React.FC = () => {
       <motion.div className='mx-auto mt-6 flex flex-wrap gap-5 overflow-hidden md:mt-12'>
         <motion.div
           className='min-w-[300px] flex-1 basis-[30%]'
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ type: 'spring', stiffness: 150, damping: 70, delay: 0 }}
+          {...animationProps.left}
+          transition={{
+            ...animationProps.left.transition,
+            delay: 0,
+          }}
         >
           <WhyChoose className='h-full w-full' />
         </motion.div>
 
         <motion.div
           className='min-w-[300px] flex-1 basis-[30%]'
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
+          {...animationProps.left}
           transition={{
-            type: 'spring',
-            stiffness: 150,
-            damping: 70,
+            ...animationProps.left.transition,
             delay: 0.1,
           }}
         >
@@ -52,13 +50,9 @@ export const ProfileSummaryBase: React.FC = () => {
 
         <motion.div
           className='min-w-[300px] flex-1 basis-[30%]'
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
+          {...animationProps.left}
           transition={{
-            type: 'spring',
-            stiffness: 150,
-            damping: 70,
+            ...animationProps.left.transition,
             delay: 0.2,
           }}
         >
@@ -67,13 +61,9 @@ export const ProfileSummaryBase: React.FC = () => {
 
         <motion.div
           className='min-h-[374px] min-w-[300px] flex-1 basis-[30%]'
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
+          {...animationProps.right}
           transition={{
-            type: 'spring',
-            stiffness: 150,
-            damping: 70,
+            ...animationProps.right.transition,
             delay: 0.3,
           }}
         >
@@ -82,13 +72,9 @@ export const ProfileSummaryBase: React.FC = () => {
 
         <motion.div
           className='min-w-[300px] flex-2 basis-[62%]'
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
+          {...animationProps.right}
           transition={{
-            type: 'spring',
-            stiffness: 150,
-            damping: 70,
+            ...animationProps.right.transition,
             delay: 0.4,
           }}
         >

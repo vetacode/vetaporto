@@ -10,49 +10,10 @@ import { StackedCircles } from '@/components/ui/stacked-circles';
 
 import { generateClamp } from '@/functions/generate-clamp';
 import { generateClampInverse } from '@/functions/generate-clamp-inverse';
+import { animationProps } from '@/utilities/animations';
 
 const Hero = () => {
   const ref = useRef(null);
-  const animationPropsLeft = {
-    initial: { x: -150, opacity: 0 },
-    whileInView: { x: 0, opacity: 1 },
-    viewport: { once: true, amount: 0.1 },
-    transition: {
-      type: 'spring',
-      stiffness: 150,
-      damping: 70,
-    },
-  };
-  const animationPropsRight = {
-    initial: { x: 150, opacity: 0 },
-    whileInView: { x: 0, opacity: 1 },
-    viewport: { once: true, amount: 0.1 },
-    transition: {
-      type: 'spring',
-      stiffness: 150,
-      damping: 70,
-    },
-  };
-  const animationPropsBottomRight = {
-    initial: { x: 100, y: 100, opacity: 0 },
-    whileInView: { x: 0, y: 0, opacity: 1 },
-    viewport: { once: true, amount: 0.1 },
-    transition: {
-      type: 'spring',
-      stiffness: 150,
-      damping: 70,
-    },
-  };
-  const animationPropsTop = {
-    initial: { y: -150, opacity: 0 },
-    whileInView: { y: 0, opacity: 1 },
-    viewport: { once: true, amount: 0.1 },
-    transition: {
-      type: 'spring',
-      stiffness: 150,
-      damping: 70,
-    },
-  };
   return (
     <>
       <section
@@ -68,17 +29,13 @@ const Hero = () => {
           ref={ref}
         >
           <motion.h1
-            initial={animationPropsTop.initial}
-            whileInView={animationPropsTop.whileInView}
-            viewport={animationPropsTop.viewport}
+            {...animationProps.top}
             transition={{
-              ...animationPropsTop.transition,
+              ...animationProps.top.transition,
               delay: 0.3,
             }}
-            className='text-neutral-25 absolute left-1/2 z-20 w-full -translate-x-1/2 text-center font-extrabold'
+            className='text-neutral-25 absolute left-1/2 z-20 w-full -translate-x-1/2 text-center font-extrabold hero-h1'
             style={{
-              fontSize: 'clamp(2.5rem, 10.17vw, 9.38rem)',
-              lineHeight: 'clamp(2.13rem, 15.82vw, 12.19rem)',
               top: generateClamp(100, 144, 1440),
             }}
           >
@@ -106,11 +63,9 @@ const Hero = () => {
             />
           </div>
           <motion.div
-            initial={animationPropsBottomRight.initial}
-            whileInView={animationPropsBottomRight.whileInView}
-            viewport={animationPropsBottomRight.viewport}
+            {...animationProps.bottomRight}
             transition={{
-              ...animationPropsBottomRight.transition,
+              ...animationProps.bottomRight.transition,
               delay: 0.1,
             }}
           >
@@ -138,11 +93,9 @@ const Hero = () => {
             />
           </motion.div>
           <motion.div
-            initial={animationPropsRight.initial}
-            whileInView={animationPropsRight.whileInView}
-            viewport={animationPropsRight.viewport}
+            {...animationProps.right}
             transition={{
-              ...animationPropsRight.transition,
+              ...animationProps.right.transition,
               delay: 0.5,
             }}
           >
@@ -169,11 +122,9 @@ const Hero = () => {
             />
           </motion.div>
           <motion.div
-            initial={animationPropsLeft.initial}
-            whileInView={animationPropsLeft.whileInView}
-            viewport={animationPropsLeft.viewport}
+            {...animationProps.left}
             transition={{
-              ...animationPropsLeft.transition,
+              ...animationProps.left.transition,
               delay: 0.3,
             }}
           >
