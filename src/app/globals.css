@@ -267,6 +267,11 @@ body {
     animation: marquee-right 25s linear infinite;
   }
 
+  .hero-h1 {
+    font-size: clamp(2.5rem, 10.17vw, 9.38rem);
+    line-height: clamp(2.13rem, 15.82vw, 12.19rem);
+  }
+
   @keyframes marquee-left {
     from {
       transform: translateX(0);

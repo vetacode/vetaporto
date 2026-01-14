@@ -8,6 +8,7 @@ import { Section } from '@/components/layouts/section';
 import { CompanyCard } from '@/components/work-experience/company-card';
 import { CompanyExperience } from '@/components/work-experience/company-experience';
 
+import { animationProps } from '@/utilities/animations';
 import { cn } from '@/lib/utils';
 
 const WorkExperience = () => {
@@ -149,14 +150,7 @@ const MobileExperienceItem: React.FC<MobileExperienceItemProps> = ({
       <div className='absolute left-1 flex h-6 w-6 items-center justify-center rounded-full border-1 border-dashed border-neutral-400'>
         <motion.div
           className='bg-primary-200 absolute top-1/2 left-1/2 z-10 aspect-square h-[16px] w-auto -translate-x-1/2 -translate-y-1/2 rounded-full'
-          animate={{
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 2,
-            ease: 'easeInOut',
-            repeat: Infinity,
-          }}
+          {...animationProps.scale}
         />
       </div>
 
